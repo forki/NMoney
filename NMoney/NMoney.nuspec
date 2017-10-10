@@ -3,11 +3,11 @@
 	<metadata>
 		<id>AbbyyLS.Payments</id>
 		<version>$version$</version>
-		<title>AbbyyLS.Payments</title>
+		<title>NMoney</title>
 		<authors>Anatoliy Koperin</authors>
 		<owners />
-		<licenseUrl>https://github.com/ExM/Money/raw/master/LICENSE</licenseUrl>
-		<projectUrl>https://github.com/ExM/Money</projectUrl>
+		<licenseUrl>https://github.com/ExM/NMoney/raw/master/LICENSE</licenseUrl>
+		<projectUrl>https://github.com/ExM/NMoney</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description> Library for working with sums of money.
 List of world currencies in accordance with ISO 4217.</description>

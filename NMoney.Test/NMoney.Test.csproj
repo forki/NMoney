@@ -7,8 +7,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A8EEFA5D-A3B0-4E35-B5FE-3D40227BD679}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AbbyyLS.Payments.Test</RootNamespace>
-    <AssemblyName>AbbyyLS.Payments.Test</AssemblyName>
+    <RootNamespace>NMoney</RootNamespace>
+    <AssemblyName>NMoney.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -48,9 +48,9 @@
     <Compile Include="MoneyTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Payments\Payments.csproj">
+    <ProjectReference Include="..\NMoney\NMoney.csproj">
       <Project>{fe869da2-b1b0-4e31-b418-7334832a59f6}</Project>
-      <Name>Payments</Name>
+      <Name>NMoney</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AbbyyLS.Payments
+namespace NMoney
 {
 	/// <summary>
 	/// The currencies standard ISO 4217

@@ -1,7 +1,6 @@
 using System.Reflection;
-using System.Runtime.CompilerServices;
 
-[assembly: AssemblyTitle("AbbyyLS.Payments.Test")]
+[assembly: AssemblyTitle("NMoney.Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]

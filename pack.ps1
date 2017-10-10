@@ -3,4 +3,4 @@ $mainFolder = Resolve-Path (Split-Path -Path $MyInvocation.MyCommand.Definition 
 $nugetExe = "$mainFolder\.nuget\nuget.exe"
 
 Remove-Item $mainFolder\*.nupkg
-& "$nugetExe" pack $mainFolder/Payments/Payments.csproj -Build -Properties Configuration=Release
+& "$nugetExe" pack $mainFolder/NMoney/NMoney.csproj -Build -Properties Configuration=Release

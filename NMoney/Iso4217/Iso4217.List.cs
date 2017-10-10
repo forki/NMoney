@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AbbyyLS.Payments
+namespace NMoney
 {
 	public static partial class Iso4217
 	{

@@ -1,6 +1,6 @@
 using System;
 
-namespace AbbyyLS.Payments
+namespace NMoney
 {
 	/// <summary>
 	/// This structure provides a amount of money in some currency

@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System.Threading;
 using System.Globalization;
 
-namespace AbbyyLS.Payments
+namespace NMoney
 {
 	[TestFixture]
 	public class CurrencyTest

@@ -14,3 +14,4 @@ NuGet/*.nupkg
 packages/*
 *.nupkg
 TestResults/*
+/.idea/

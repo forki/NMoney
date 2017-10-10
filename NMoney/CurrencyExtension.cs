@@ -1,11 +1,11 @@
 using System;
 
-namespace AbbyyLS.Payments
+namespace NMoney
 {
 	/// <summary>
 	/// any extensions
 	/// </summary>
-	public static class PaymentsExtension
+	public static class CurrencyExtension
 	{
 		/// <summary>
 		/// Create money from this currency

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6C48742A-D944-4BF1-A4FB-6BBF1ECB7E58}"
 	ProjectSection(SolutionItems) = preProject
@@ -10,14 +10,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{6C48742A-D94
 		doc\unicodeSymbols.csv = doc\unicodeSymbols.csv
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments", "Payments\Payments.csproj", "{FE869DA2-B1B0-4E31-B418-7334832A59F6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMoney", "NMoney\NMoney.csproj", "{FE869DA2-B1B0-4E31-B418-7334832A59F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "T4Templates", "T4Templates", "{A70734D1-3732-498C-B19F-2F71641DD849}"
 	ProjectSection(SolutionItems) = preProject
 		T4Templates\Iso4217table.ttinclude = T4Templates\Iso4217table.ttinclude
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Test", "Payments.Test\Payments.Test.csproj", "{A8EEFA5D-A3B0-4E35-B5FE-3D40227BD679}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMoney.Test", "NMoney.Test\NMoney.Test.csproj", "{A8EEFA5D-A3B0-4E35-B5FE-3D40227BD679}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{FF3AE7E2-DD5F-4574-B40D-8CB3E6A380D3}"
 	ProjectSection(SolutionItems) = preProject
