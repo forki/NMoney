@@ -19,7 +19,7 @@ namespace NMoney
 
 		[TestCase("USD", -0.991)]
 		[TestCase("USD", 20.999)]
-		[TestCase("BYR", 21.00001)]
+		[TestCase("JPY", 21.00001)]
 		public void NotRounded(string code, decimal amount)
 		{
 			Assert.IsFalse(Iso4217.Parse(code).Money(amount).IsRounded);
@@ -29,8 +29,8 @@ namespace NMoney
 		[TestCase("USD", 20.5)]
 		[TestCase("USD", -20)]
 		[TestCase("USD", -0.99)]
-		[TestCase("BYR", 20)]
-		[TestCase("BYR", 21)]
+		[TestCase("JPY", 20)]
+		[TestCase("JPY", 21)]
 		[TestCase("XAU", 21.00001)]
 		public void IsRounded(string code, decimal amount)
 		{
@@ -43,9 +43,9 @@ namespace NMoney
 		[TestCase("USD", -0.99, -99)]
 		[TestCase("USD", -0.991, -99.1)]
 		[TestCase("USD", 20.999, 2099.9)]
-		[TestCase("BYR", 20, 20)]
-		[TestCase("BYR", 21, 21)]
-		[TestCase("BYR", 21.00001, 21.00001)]
+		[TestCase("JPY", 20, 20)]
+		[TestCase("JPY", 21, 21)]
+		[TestCase("JPY", 21.00001, 21.00001)]
 		public void TotalMinorUnit(string code, decimal amount, decimal exp)
 		{
 			Assert.AreEqual(exp, Iso4217.Parse(code).Money(amount).TotalMinorUnit);
@@ -54,10 +54,10 @@ namespace NMoney
 		[TestCase("USD", 20.95, 20.95)]
 		[TestCase("USD", 20.953, 20.95)]
 		[TestCase("USD", -20.953, -20.96)]
-		[TestCase("BYR", 20, 20)]
-		[TestCase("BYR", 20.1, 20)]
-		[TestCase("BYR", 20.00001, 20)]
-		[TestCase("BYR", -20.00001, -21)]
+		[TestCase("JPY", 20, 20)]
+		[TestCase("JPY", 20.1, 20)]
+		[TestCase("JPY", 20.00001, 20)]
+		[TestCase("JPY", -20.00001, -21)]
 		[TestCase("XDR", 20.00001, 20.00001)]
 		public void FloorMinorUnit(string code, decimal amount, decimal exp)
 		{
@@ -67,10 +67,10 @@ namespace NMoney
 		[TestCase("USD", 20.95, 20.95)]
 		[TestCase("USD", 20.953, 20.96)]
 		[TestCase("USD", -20.953, -20.95)]
-		[TestCase("BYR", 20, 20)]
-		[TestCase("BYR", 20.1, 21)]
-		[TestCase("BYR", 20.00001, 21)]
-		[TestCase("BYR", -20.00001, -20)]
+		[TestCase("JPY", 20, 20)]
+		[TestCase("JPY", 20.1, 21)]
+		[TestCase("JPY", 20.00001, 21)]
+		[TestCase("JPY", -20.00001, -20)]
 		[TestCase("XDR", 20.00001, 20.00001)]
 		[TestCase("BYN", 20.001, 20.01)]
 		public void CeilingMinorUnit(string code, decimal amount, decimal exp)
@@ -81,11 +81,11 @@ namespace NMoney
 		[TestCase("USD", 20, 20)]
 		[TestCase("USD", 20.953, 20)]
 		[TestCase("USD", -20.953, -21)]
-		[TestCase("BYR", 20, 20)]
-		[TestCase("BYR", 20.1, 20)]
-		[TestCase("BYR", 20.00001, 20)]
-		[TestCase("BYR", -20.00001, -21)]
-		[TestCase("BYN", 20.015, 20.01)]
+		[TestCase("JPY", 20, 20)]
+		[TestCase("JPY", 20.1, 20)]
+		[TestCase("JPY", 20.00001, 20)]
+		[TestCase("JPY", -20.00001, -21)]
+		[TestCase("BYN", 20.015, 20)]
 		public void FloorMajorUnit(string code, decimal amount, decimal exp)
 		{
 			Assert.AreEqual(exp, Iso4217.Parse(code).Money(amount).FloorMajorUnit().Amount);
@@ -94,10 +94,10 @@ namespace NMoney
 		[TestCase("USD", 20, 20)]
 		[TestCase("USD", 20.953, 21)]
 		[TestCase("USD", -20.953, -20)]
-		[TestCase("BYR", 20, 20)]
-		[TestCase("BYR", 20.1, 21)]
-		[TestCase("BYR", 20.00001, 21)]
-		[TestCase("BYR", -20.00001, -20)]
+		[TestCase("JPY", 20, 20)]
+		[TestCase("JPY", 20.1, 21)]
+		[TestCase("JPY", 20.00001, 21)]
+		[TestCase("JPY", -20.00001, -20)]
 		public void CeilingMajorUnit(string code, decimal amount, decimal exp)
 		{
 			Assert.AreEqual(exp, Iso4217.Parse(code).Money(amount).CeilingMajorUnit().Amount);
