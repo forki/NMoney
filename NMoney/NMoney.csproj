@@ -56,9 +56,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="NMoney.nuspec">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="paket.references" />
+    <None Include="paket.template" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Iso4217\Iso4217.List.tt">
@@ -73,4 +72,5 @@
     <EmbeddedResource Include="Dic.resx" />
     <EmbeddedResource Include="Dic.ru.resx" />
   </ItemGroup>
+  <Import Project="..\.paket\paket.targets" />
 </Project>
