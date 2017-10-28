@@ -2,18 +2,18 @@ using System;
 using System.Resources;
 using System.Globalization;
 
-namespace NMoney
+namespace NMoney.Iso4217
 {
-	internal class Iso4217Currency: ICurrency
+	internal class Currency: ICurrency, IFormattable
 	{
-		private static readonly ResourceManager _rMan = new ResourceManager("NMoney.Dic", typeof(Iso4217Currency).Assembly);
+		private static readonly ResourceManager _rMan = new ResourceManager("NMoney.Dic", typeof(Currency).Assembly);
 		
 		private readonly string _charCode;
 		private readonly int _numCode;
 		private readonly string _symbol;
 		private readonly decimal _minorUnit;
 		
-		internal Iso4217Currency(string charCode, string sym, int num, decimal mu)
+		internal Currency(string charCode, string sym, int num, decimal mu)
 		{
 			_charCode = charCode;
 			_numCode = num;
@@ -23,41 +23,34 @@ namespace NMoney
 		
 		public override string ToString()
 		{
-			return _rMan.GetString(_charCode);
+			return ToString("n", null);
+		}
+
+		public string ToString(string format, IFormatProvider formatProvider)
+		{
+			switch(format)
+			{
+				case "s":
+					return _symbol;
+				case "c":
+					return _charCode;
+				case null:
+				case "":
+				case "n":
+					return _rMan.GetString(_charCode, formatProvider as CultureInfo);
+				default:
+					throw new FormatException($"unexpected format '{format}'");
+			}
 		}
 
 		#region ICurrency implementation
-		public string CharCode
-		{
-			get
-			{
-				return _charCode;
-			}
-		}
+		public string CharCode => _charCode;
 
-		public int NumCode
-		{
-			get
-			{
-				return _numCode;
-			}
-		}
+		public int NumCode => _numCode;
 
-		public string Symbol
-		{
-			get
-			{
-				return _symbol;
-			}
-		}
+		public string Symbol => _symbol;
 
-		public decimal MinorUnit
-		{
-			get
-			{
-				return _minorUnit;
-			}
-		}
+		public decimal MinorUnit => _minorUnit;
 		#endregion
 	}
 }

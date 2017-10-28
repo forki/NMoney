@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace NMoney
+namespace NMoney.Iso4217
 {
 	/// <summary>
 	/// The currencies standard ISO 4217
 	/// </summary>
-	public static partial class Iso4217
+	public partial class CurrencyCollection : CurrencyCollection<string>
 	{
 		/// <summary>
 		/// ISO 4217 contain this instance of currency
@@ -13,9 +13,9 @@ namespace NMoney
 		/// <param name="currency">
 		/// instance
 		/// </param>
-		public static bool Contain(ICurrency currency)
+		public bool Contain(ICurrency currency)
 		{
-			return currency is Iso4217Currency;
+			return currency is Currency;
 		}
 		
 		/// <summary>

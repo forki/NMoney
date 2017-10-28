@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CurrencyCollection.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="ICurrency.cs" />
     <Compile Include="Iso4217\Currency.cs" />
@@ -69,8 +70,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dic.resx" />
-    <EmbeddedResource Include="Dic.ru.resx" />
+    <EmbeddedResource Include="Iso4217\Dic.resx" />
+    <EmbeddedResource Include="Iso4217\Dic.ru.resx" />
   </ItemGroup>
   <Import Project="..\.paket\paket.targets" />
 </Project>
