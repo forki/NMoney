@@ -23,7 +23,7 @@ namespace NMoney
 			if (object.ReferenceEquals(other, null))
 				return false;
 
-			return string.Equals(CharCode, other.CharCode, StringComparison.OrdinalIgnoreCase);
+			return object.ReferenceEquals(other, this);
 		}
 
 		public string CharCode { get; private set; }

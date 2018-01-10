@@ -73,8 +73,8 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Iso4217\Dic.resx" />
-    <EmbeddedResource Include="Iso4217\Dic.ru.resx" />
+    <EmbeddedResource Include="Iso4217\Names.ru.resx" />
+    <EmbeddedResource Include="Iso4217\Names.resx" />
   </ItemGroup>
   <Import Project="..\.paket\paket.targets" />
 </Project>

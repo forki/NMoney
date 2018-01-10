@@ -6,7 +6,7 @@ namespace NMoney.Iso4217
 {
 	public class Currency: NMoney.Currency, IFormattable
 	{
-		private static readonly ResourceManager _rMan = new ResourceManager("NMoney.Iso4217.Dic", typeof(Currency).Assembly);
+		private static readonly ResourceManager _rMan = new ResourceManager("NMoney.Iso4217.Names", typeof(Currency).Assembly);
 
 		private readonly int _numCode;
 		

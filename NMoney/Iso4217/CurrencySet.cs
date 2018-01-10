@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 namespace NMoney.Iso4217
 {
@@ -12,8 +13,13 @@ namespace NMoney.Iso4217
 
 		public static CurrencySet Instance => _lazy.Value;
 
+		private Dictionary<int, Iso4217.Currency> _numMap;
+
 		private CurrencySet() : base(GetAll())
 		{
+			_numMap = new Dictionary<int, Iso4217.Currency>(Count);
+			foreach (var c in this)
+				_numMap.Add(c.NumCode, c);
 		}
 
 		/// <summary>
@@ -52,6 +58,22 @@ namespace NMoney.Iso4217
 				return currency;
 
 			throw new NotSupportedException("currency code '" + charCode + "' not supported in ISO4217");
+		}
+
+		/// <summary>
+		/// Parse number code of currency in ISO4217
+		/// </summary>
+		/// <param name="numCode">
+		/// number code of currency
+		/// </param>
+		/// <returns>
+		/// null if not found<see cref="ICurrency"/>
+		/// </returns>
+		public Currency TryParse(int numCode)
+		{
+			Currency currency;
+			_numMap.TryGetValue(numCode, out currency);
+			return currency;
 		}
 
 		/// <summary>

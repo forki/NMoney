@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace NMoney.Iso4217
@@ -9,917 +8,717 @@ namespace NMoney.Iso4217
 		/// <summary>
 		/// UAE Dirham
 		/// </summary>
-		public static readonly Currency AED = new Currency("AED", "¤", 784, 0.01m);
+		public static Currency AED => AEDCache.Instance;
 		/// <summary>
 		/// Afghani
 		/// </summary>
-		public static readonly Currency AFN = new Currency("AFN", "\u060b", 971, 0.01m);
+		public static Currency AFN => AFNCache.Instance;
 		/// <summary>
 		/// Lek
 		/// </summary>
-		public static readonly Currency ALL = new Currency("ALL", "Lek", 8, 0.01m);
+		public static Currency ALL => ALLCache.Instance;
 		/// <summary>
 		/// Armenian Dram
 		/// </summary>
-		public static readonly Currency AMD = new Currency("AMD", "¤", 51, 0.01m);
+		public static Currency AMD => AMDCache.Instance;
 		/// <summary>
 		/// Netherlands Antillean Guilder
 		/// </summary>
-		public static readonly Currency ANG = new Currency("ANG", "\u0192", 532, 0.01m);
+		public static Currency ANG => ANGCache.Instance;
 		/// <summary>
 		/// Kwanza
 		/// </summary>
-		public static readonly Currency AOA = new Currency("AOA", "¤", 973, 0.01m);
+		public static Currency AOA => AOACache.Instance;
 		/// <summary>
 		/// Argentine Peso
 		/// </summary>
-		public static readonly Currency ARS = new Currency("ARS", "$", 32, 0.01m);
+		public static Currency ARS => ARSCache.Instance;
 		/// <summary>
 		/// Australian Dollar
 		/// </summary>
-		public static readonly Currency AUD = new Currency("AUD", "$", 36, 0.01m);
+		public static Currency AUD => AUDCache.Instance;
 		/// <summary>
 		/// Aruban Florin
 		/// </summary>
-		public static readonly Currency AWG = new Currency("AWG", "\u0192", 533, 0.01m);
+		public static Currency AWG => AWGCache.Instance;
 		/// <summary>
 		/// Azerbaijan Manat
 		/// </summary>
-		public static readonly Currency AZN = new Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
+		public static Currency AZN => AZNCache.Instance;
 		/// <summary>
 		/// Convertible Mark
 		/// </summary>
-		public static readonly Currency BAM = new Currency("BAM", "KM", 977, 0.01m);
+		public static Currency BAM => BAMCache.Instance;
 		/// <summary>
 		/// Barbados Dollar
 		/// </summary>
-		public static readonly Currency BBD = new Currency("BBD", "$", 52, 0.01m);
+		public static Currency BBD => BBDCache.Instance;
 		/// <summary>
 		/// Taka
 		/// </summary>
-		public static readonly Currency BDT = new Currency("BDT", "¤", 50, 0.01m);
+		public static Currency BDT => BDTCache.Instance;
 		/// <summary>
 		/// Bulgarian Lev
 		/// </summary>
-		public static readonly Currency BGN = new Currency("BGN", "\u043b\u0432", 975, 0.01m);
+		public static Currency BGN => BGNCache.Instance;
 		/// <summary>
 		/// Bahraini Dinar
 		/// </summary>
-		public static readonly Currency BHD = new Currency("BHD", "¤", 48, 0.001m);
+		public static Currency BHD => BHDCache.Instance;
 		/// <summary>
 		/// Burundi Franc
 		/// </summary>
-		public static readonly Currency BIF = new Currency("BIF", "¤", 108, 1m);
+		public static Currency BIF => BIFCache.Instance;
 		/// <summary>
 		/// Bermudian Dollar
 		/// </summary>
-		public static readonly Currency BMD = new Currency("BMD", "$", 60, 0.01m);
+		public static Currency BMD => BMDCache.Instance;
 		/// <summary>
 		/// Brunei Dollar
 		/// </summary>
-		public static readonly Currency BND = new Currency("BND", "$", 96, 0.01m);
+		public static Currency BND => BNDCache.Instance;
 		/// <summary>
 		/// Boliviano
 		/// </summary>
-		public static readonly Currency BOB = new Currency("BOB", "$b", 68, 0.01m);
+		public static Currency BOB => BOBCache.Instance;
 		/// <summary>
 		/// Mvdol
 		/// </summary>
-		public static readonly Currency BOV = new Currency("BOV", "¤", 984, 0.01m);
+		public static Currency BOV => BOVCache.Instance;
 		/// <summary>
 		/// Brazilian Real
 		/// </summary>
-		public static readonly Currency BRL = new Currency("BRL", "R$", 986, 0.01m);
+		public static Currency BRL => BRLCache.Instance;
 		/// <summary>
 		/// Bahamian Dollar
 		/// </summary>
-		public static readonly Currency BSD = new Currency("BSD", "$", 44, 0.01m);
+		public static Currency BSD => BSDCache.Instance;
 		/// <summary>
 		/// Ngultrum
 		/// </summary>
-		public static readonly Currency BTN = new Currency("BTN", "¤", 64, 0.01m);
+		public static Currency BTN => BTNCache.Instance;
 		/// <summary>
 		/// Pula
 		/// </summary>
-		public static readonly Currency BWP = new Currency("BWP", "P", 72, 0.01m);
+		public static Currency BWP => BWPCache.Instance;
 		/// <summary>
 		/// Belarusian Ruble
 		/// </summary>
-		public static readonly Currency BYN = new Currency("BYN", "p.", 933, 0.01m);
+		public static Currency BYN => BYNCache.Instance;
 		/// <summary>
 		/// Belize Dollar
 		/// </summary>
-		public static readonly Currency BZD = new Currency("BZD", "BZ$", 84, 0.01m);
+		public static Currency BZD => BZDCache.Instance;
 		/// <summary>
 		/// Canadian Dollar
 		/// </summary>
-		public static readonly Currency CAD = new Currency("CAD", "$", 124, 0.01m);
+		public static Currency CAD => CADCache.Instance;
 		/// <summary>
 		/// Congolese Franc
 		/// </summary>
-		public static readonly Currency CDF = new Currency("CDF", "¤", 976, 0.01m);
+		public static Currency CDF => CDFCache.Instance;
 		/// <summary>
 		/// WIR Euro
 		/// </summary>
-		public static readonly Currency CHE = new Currency("CHE", "¤", 947, 0.01m);
+		public static Currency CHE => CHECache.Instance;
 		/// <summary>
 		/// Swiss Franc
 		/// </summary>
-		public static readonly Currency CHF = new Currency("CHF", "CHF", 756, 0.01m);
+		public static Currency CHF => CHFCache.Instance;
 		/// <summary>
 		/// WIR Franc
 		/// </summary>
-		public static readonly Currency CHW = new Currency("CHW", "¤", 948, 0.01m);
+		public static Currency CHW => CHWCache.Instance;
 		/// <summary>
 		/// Unidad de Fomento
 		/// </summary>
-		public static readonly Currency CLF = new Currency("CLF", "¤", 990, 0.0001m);
+		public static Currency CLF => CLFCache.Instance;
 		/// <summary>
 		/// Chilean Peso
 		/// </summary>
-		public static readonly Currency CLP = new Currency("CLP", "$", 152, 1m);
+		public static Currency CLP => CLPCache.Instance;
 		/// <summary>
 		/// Yuan Renminbi
 		/// </summary>
-		public static readonly Currency CNY = new Currency("CNY", "¥", 156, 0.01m);
+		public static Currency CNY => CNYCache.Instance;
 		/// <summary>
 		/// Colombian Peso
 		/// </summary>
-		public static readonly Currency COP = new Currency("COP", "$", 170, 0.01m);
+		public static Currency COP => COPCache.Instance;
 		/// <summary>
 		/// Unidad de Valor Real
 		/// </summary>
-		public static readonly Currency COU = new Currency("COU", "¤", 970, 0.01m);
+		public static Currency COU => COUCache.Instance;
 		/// <summary>
 		/// Costa Rican Colon
 		/// </summary>
-		public static readonly Currency CRC = new Currency("CRC", "\u20a1", 188, 0.01m);
+		public static Currency CRC => CRCCache.Instance;
 		/// <summary>
 		/// Peso Convertible
 		/// </summary>
-		public static readonly Currency CUC = new Currency("CUC", "¤", 931, 0.01m);
+		public static Currency CUC => CUCCache.Instance;
 		/// <summary>
 		/// Cuban Peso
 		/// </summary>
-		public static readonly Currency CUP = new Currency("CUP", "\u20b1", 192, 0.01m);
+		public static Currency CUP => CUPCache.Instance;
 		/// <summary>
 		/// Cabo Verde Escudo
 		/// </summary>
-		public static readonly Currency CVE = new Currency("CVE", "¤", 132, 0.01m);
+		public static Currency CVE => CVECache.Instance;
 		/// <summary>
 		/// Czech Koruna
 		/// </summary>
-		public static readonly Currency CZK = new Currency("CZK", "K\u010d", 203, 0.01m);
+		public static Currency CZK => CZKCache.Instance;
 		/// <summary>
 		/// Djibouti Franc
 		/// </summary>
-		public static readonly Currency DJF = new Currency("DJF", "¤", 262, 1m);
+		public static Currency DJF => DJFCache.Instance;
 		/// <summary>
 		/// Danish Krone
 		/// </summary>
-		public static readonly Currency DKK = new Currency("DKK", "kr", 208, 0.01m);
+		public static Currency DKK => DKKCache.Instance;
 		/// <summary>
 		/// Dominican Peso
 		/// </summary>
-		public static readonly Currency DOP = new Currency("DOP", "RD$", 214, 0.01m);
+		public static Currency DOP => DOPCache.Instance;
 		/// <summary>
 		/// Algerian Dinar
 		/// </summary>
-		public static readonly Currency DZD = new Currency("DZD", "¤", 12, 0.01m);
+		public static Currency DZD => DZDCache.Instance;
 		/// <summary>
 		/// Egyptian Pound
 		/// </summary>
-		public static readonly Currency EGP = new Currency("EGP", "£", 818, 0.01m);
+		public static Currency EGP => EGPCache.Instance;
 		/// <summary>
 		/// Nakfa
 		/// </summary>
-		public static readonly Currency ERN = new Currency("ERN", "¤", 232, 0.01m);
+		public static Currency ERN => ERNCache.Instance;
 		/// <summary>
 		/// Ethiopian Birr
 		/// </summary>
-		public static readonly Currency ETB = new Currency("ETB", "¤", 230, 0.01m);
+		public static Currency ETB => ETBCache.Instance;
 		/// <summary>
 		/// Euro
 		/// </summary>
-		public static readonly Currency EUR = new Currency("EUR", "\u20ac", 978, 0.01m);
+		public static Currency EUR => EURCache.Instance;
 		/// <summary>
 		/// Fiji Dollar
 		/// </summary>
-		public static readonly Currency FJD = new Currency("FJD", "$", 242, 0.01m);
+		public static Currency FJD => FJDCache.Instance;
 		/// <summary>
 		/// Falkland Islands Pound
 		/// </summary>
-		public static readonly Currency FKP = new Currency("FKP", "£", 238, 0.01m);
+		public static Currency FKP => FKPCache.Instance;
 		/// <summary>
 		/// Pound Sterling
 		/// </summary>
-		public static readonly Currency GBP = new Currency("GBP", "£", 826, 0.01m);
+		public static Currency GBP => GBPCache.Instance;
 		/// <summary>
 		/// Lari
 		/// </summary>
-		public static readonly Currency GEL = new Currency("GEL", "¤", 981, 0.01m);
+		public static Currency GEL => GELCache.Instance;
 		/// <summary>
 		/// Ghana Cedi
 		/// </summary>
-		public static readonly Currency GHS = new Currency("GHS", "¤", 936, 0.01m);
+		public static Currency GHS => GHSCache.Instance;
 		/// <summary>
 		/// Gibraltar Pound
 		/// </summary>
-		public static readonly Currency GIP = new Currency("GIP", "£", 292, 0.01m);
+		public static Currency GIP => GIPCache.Instance;
 		/// <summary>
 		/// Dalasi
 		/// </summary>
-		public static readonly Currency GMD = new Currency("GMD", "¤", 270, 0.01m);
+		public static Currency GMD => GMDCache.Instance;
 		/// <summary>
 		/// Guinean Franc
 		/// </summary>
-		public static readonly Currency GNF = new Currency("GNF", "¤", 324, 1m);
+		public static Currency GNF => GNFCache.Instance;
 		/// <summary>
 		/// Quetzal
 		/// </summary>
-		public static readonly Currency GTQ = new Currency("GTQ", "Q", 320, 0.01m);
+		public static Currency GTQ => GTQCache.Instance;
 		/// <summary>
 		/// Guyana Dollar
 		/// </summary>
-		public static readonly Currency GYD = new Currency("GYD", "$", 328, 0.01m);
+		public static Currency GYD => GYDCache.Instance;
 		/// <summary>
 		/// Hong Kong Dollar
 		/// </summary>
-		public static readonly Currency HKD = new Currency("HKD", "HK$", 344, 0.01m);
+		public static Currency HKD => HKDCache.Instance;
 		/// <summary>
 		/// Lempira
 		/// </summary>
-		public static readonly Currency HNL = new Currency("HNL", "L", 340, 0.01m);
+		public static Currency HNL => HNLCache.Instance;
 		/// <summary>
 		/// Kuna
 		/// </summary>
-		public static readonly Currency HRK = new Currency("HRK", "kn", 191, 0.01m);
+		public static Currency HRK => HRKCache.Instance;
 		/// <summary>
 		/// Gourde
 		/// </summary>
-		public static readonly Currency HTG = new Currency("HTG", "¤", 332, 0.01m);
+		public static Currency HTG => HTGCache.Instance;
 		/// <summary>
 		/// Forint
 		/// </summary>
-		public static readonly Currency HUF = new Currency("HUF", "Ft", 348, 0.01m);
+		public static Currency HUF => HUFCache.Instance;
 		/// <summary>
 		/// Rupiah
 		/// </summary>
-		public static readonly Currency IDR = new Currency("IDR", "Rp", 360, 0.01m);
+		public static Currency IDR => IDRCache.Instance;
 		/// <summary>
 		/// New Israeli Sheqel
 		/// </summary>
-		public static readonly Currency ILS = new Currency("ILS", "\u20aa", 376, 0.01m);
+		public static Currency ILS => ILSCache.Instance;
 		/// <summary>
 		/// Indian Rupee
 		/// </summary>
-		public static readonly Currency INR = new Currency("INR", "\u20a8", 356, 0.01m);
+		public static Currency INR => INRCache.Instance;
 		/// <summary>
 		/// Iraqi Dinar
 		/// </summary>
-		public static readonly Currency IQD = new Currency("IQD", "¤", 368, 0.001m);
+		public static Currency IQD => IQDCache.Instance;
 		/// <summary>
 		/// Iranian Rial
 		/// </summary>
-		public static readonly Currency IRR = new Currency("IRR", "\ufdfc", 364, 0.01m);
+		public static Currency IRR => IRRCache.Instance;
 		/// <summary>
 		/// Iceland Krona
 		/// </summary>
-		public static readonly Currency ISK = new Currency("ISK", "kr", 352, 1m);
+		public static Currency ISK => ISKCache.Instance;
 		/// <summary>
 		/// Jamaican Dollar
 		/// </summary>
-		public static readonly Currency JMD = new Currency("JMD", "J$", 388, 0.01m);
+		public static Currency JMD => JMDCache.Instance;
 		/// <summary>
 		/// Jordanian Dinar
 		/// </summary>
-		public static readonly Currency JOD = new Currency("JOD", "¤", 400, 0.001m);
+		public static Currency JOD => JODCache.Instance;
 		/// <summary>
 		/// Yen
 		/// </summary>
-		public static readonly Currency JPY = new Currency("JPY", "¥", 392, 1m);
+		public static Currency JPY => JPYCache.Instance;
 		/// <summary>
 		/// Kenyan Shilling
 		/// </summary>
-		public static readonly Currency KES = new Currency("KES", "¤", 404, 0.01m);
+		public static Currency KES => KESCache.Instance;
 		/// <summary>
 		/// Som
 		/// </summary>
-		public static readonly Currency KGS = new Currency("KGS", "\u043b\u0432", 417, 0.01m);
+		public static Currency KGS => KGSCache.Instance;
 		/// <summary>
 		/// Riel
 		/// </summary>
-		public static readonly Currency KHR = new Currency("KHR", "\u17db", 116, 0.01m);
+		public static Currency KHR => KHRCache.Instance;
 		/// <summary>
 		/// Comorian Franc 
 		/// </summary>
-		public static readonly Currency KMF = new Currency("KMF", "¤", 174, 1m);
+		public static Currency KMF => KMFCache.Instance;
 		/// <summary>
 		/// North Korean Won
 		/// </summary>
-		public static readonly Currency KPW = new Currency("KPW", "\u20a9", 408, 0.01m);
+		public static Currency KPW => KPWCache.Instance;
 		/// <summary>
 		/// Won
 		/// </summary>
-		public static readonly Currency KRW = new Currency("KRW", "¤", 410, 1m);
+		public static Currency KRW => KRWCache.Instance;
 		/// <summary>
 		/// Kuwaiti Dinar
 		/// </summary>
-		public static readonly Currency KWD = new Currency("KWD", "¤", 414, 0.001m);
+		public static Currency KWD => KWDCache.Instance;
 		/// <summary>
 		/// Cayman Islands Dollar
 		/// </summary>
-		public static readonly Currency KYD = new Currency("KYD", "$", 136, 0.01m);
+		public static Currency KYD => KYDCache.Instance;
 		/// <summary>
 		/// Tenge
 		/// </summary>
-		public static readonly Currency KZT = new Currency("KZT", "\u043b\u0432", 398, 0.01m);
+		public static Currency KZT => KZTCache.Instance;
 		/// <summary>
 		/// Lao Kip
 		/// </summary>
-		public static readonly Currency LAK = new Currency("LAK", "\u20ad", 418, 0.01m);
+		public static Currency LAK => LAKCache.Instance;
 		/// <summary>
 		/// Lebanese Pound
 		/// </summary>
-		public static readonly Currency LBP = new Currency("LBP", "£", 422, 0.01m);
+		public static Currency LBP => LBPCache.Instance;
 		/// <summary>
 		/// Sri Lanka Rupee
 		/// </summary>
-		public static readonly Currency LKR = new Currency("LKR", "\u20a8", 144, 0.01m);
+		public static Currency LKR => LKRCache.Instance;
 		/// <summary>
 		/// Liberian Dollar
 		/// </summary>
-		public static readonly Currency LRD = new Currency("LRD", "$", 430, 0.01m);
+		public static Currency LRD => LRDCache.Instance;
 		/// <summary>
 		/// Loti
 		/// </summary>
-		public static readonly Currency LSL = new Currency("LSL", "¤", 426, 0.01m);
+		public static Currency LSL => LSLCache.Instance;
 		/// <summary>
 		/// Libyan Dinar
 		/// </summary>
-		public static readonly Currency LYD = new Currency("LYD", "¤", 434, 0.001m);
+		public static Currency LYD => LYDCache.Instance;
 		/// <summary>
 		/// Moroccan Dirham
 		/// </summary>
-		public static readonly Currency MAD = new Currency("MAD", "¤", 504, 0.01m);
+		public static Currency MAD => MADCache.Instance;
 		/// <summary>
 		/// Moldovan Leu
 		/// </summary>
-		public static readonly Currency MDL = new Currency("MDL", "¤", 498, 0.01m);
+		public static Currency MDL => MDLCache.Instance;
 		/// <summary>
 		/// Malagasy Ariary
 		/// </summary>
-		public static readonly Currency MGA = new Currency("MGA", "¤", 969, 0.01m);
+		public static Currency MGA => MGACache.Instance;
 		/// <summary>
 		/// Denar
 		/// </summary>
-		public static readonly Currency MKD = new Currency("MKD", "\u0434\u0435\u043d", 807, 0.01m);
+		public static Currency MKD => MKDCache.Instance;
 		/// <summary>
 		/// Kyat
 		/// </summary>
-		public static readonly Currency MMK = new Currency("MMK", "¤", 104, 0.01m);
+		public static Currency MMK => MMKCache.Instance;
 		/// <summary>
 		/// Tugrik
 		/// </summary>
-		public static readonly Currency MNT = new Currency("MNT", "\u20ae", 496, 0.01m);
+		public static Currency MNT => MNTCache.Instance;
 		/// <summary>
 		/// Pataca
 		/// </summary>
-		public static readonly Currency MOP = new Currency("MOP", "¤", 446, 0.01m);
+		public static Currency MOP => MOPCache.Instance;
 		/// <summary>
 		/// Ouguiya
 		/// </summary>
-		public static readonly Currency MRO = new Currency("MRO", "¤", 478, 0.01m);
+		public static Currency MRO => MROCache.Instance;
 		/// <summary>
 		/// Mauritius Rupee
 		/// </summary>
-		public static readonly Currency MUR = new Currency("MUR", "\u20a8", 480, 0.01m);
+		public static Currency MUR => MURCache.Instance;
 		/// <summary>
 		/// Rufiyaa
 		/// </summary>
-		public static readonly Currency MVR = new Currency("MVR", "¤", 462, 0.01m);
+		public static Currency MVR => MVRCache.Instance;
 		/// <summary>
 		/// Malawi Kwacha
 		/// </summary>
-		public static readonly Currency MWK = new Currency("MWK", "¤", 454, 0.01m);
+		public static Currency MWK => MWKCache.Instance;
 		/// <summary>
 		/// Mexican Peso
 		/// </summary>
-		public static readonly Currency MXN = new Currency("MXN", "$", 484, 0.01m);
+		public static Currency MXN => MXNCache.Instance;
 		/// <summary>
 		/// Mexican Unidad de Inversion (UDI)
 		/// </summary>
-		public static readonly Currency MXV = new Currency("MXV", "¤", 979, 0.01m);
+		public static Currency MXV => MXVCache.Instance;
 		/// <summary>
 		/// Malaysian Ringgit
 		/// </summary>
-		public static readonly Currency MYR = new Currency("MYR", "RM", 458, 0.01m);
+		public static Currency MYR => MYRCache.Instance;
 		/// <summary>
 		/// Mozambique Metical
 		/// </summary>
-		public static readonly Currency MZN = new Currency("MZN", "MT", 943, 0.01m);
+		public static Currency MZN => MZNCache.Instance;
 		/// <summary>
 		/// Namibia Dollar
 		/// </summary>
-		public static readonly Currency NAD = new Currency("NAD", "$", 516, 0.01m);
+		public static Currency NAD => NADCache.Instance;
 		/// <summary>
 		/// Naira
 		/// </summary>
-		public static readonly Currency NGN = new Currency("NGN", "\u20a6", 566, 0.01m);
+		public static Currency NGN => NGNCache.Instance;
 		/// <summary>
 		/// Cordoba Oro
 		/// </summary>
-		public static readonly Currency NIO = new Currency("NIO", "C$", 558, 0.01m);
+		public static Currency NIO => NIOCache.Instance;
 		/// <summary>
 		/// Norwegian Krone
 		/// </summary>
-		public static readonly Currency NOK = new Currency("NOK", "kr", 578, 0.01m);
+		public static Currency NOK => NOKCache.Instance;
 		/// <summary>
 		/// Nepalese Rupee
 		/// </summary>
-		public static readonly Currency NPR = new Currency("NPR", "\u20a8", 524, 0.01m);
+		public static Currency NPR => NPRCache.Instance;
 		/// <summary>
 		/// New Zealand Dollar
 		/// </summary>
-		public static readonly Currency NZD = new Currency("NZD", "$", 554, 0.01m);
+		public static Currency NZD => NZDCache.Instance;
 		/// <summary>
 		/// Rial Omani
 		/// </summary>
-		public static readonly Currency OMR = new Currency("OMR", "\ufdfc", 512, 0.001m);
+		public static Currency OMR => OMRCache.Instance;
 		/// <summary>
 		/// Balboa
 		/// </summary>
-		public static readonly Currency PAB = new Currency("PAB", "B/.", 590, 0.01m);
+		public static Currency PAB => PABCache.Instance;
 		/// <summary>
 		/// Sol
 		/// </summary>
-		public static readonly Currency PEN = new Currency("PEN", "S/.", 604, 0.01m);
+		public static Currency PEN => PENCache.Instance;
 		/// <summary>
 		/// Kina
 		/// </summary>
-		public static readonly Currency PGK = new Currency("PGK", "¤", 598, 0.01m);
+		public static Currency PGK => PGKCache.Instance;
 		/// <summary>
 		/// Philippine Peso
 		/// </summary>
-		public static readonly Currency PHP = new Currency("PHP", "Php", 608, 0.01m);
+		public static Currency PHP => PHPCache.Instance;
 		/// <summary>
 		/// Pakistan Rupee
 		/// </summary>
-		public static readonly Currency PKR = new Currency("PKR", "\u20a8", 586, 0.01m);
+		public static Currency PKR => PKRCache.Instance;
 		/// <summary>
 		/// Zloty
 		/// </summary>
-		public static readonly Currency PLN = new Currency("PLN", "z\u0142", 985, 0.01m);
+		public static Currency PLN => PLNCache.Instance;
 		/// <summary>
 		/// Guarani
 		/// </summary>
-		public static readonly Currency PYG = new Currency("PYG", "Gs", 600, 1m);
+		public static Currency PYG => PYGCache.Instance;
 		/// <summary>
 		/// Qatari Rial
 		/// </summary>
-		public static readonly Currency QAR = new Currency("QAR", "\ufdfc", 634, 0.01m);
+		public static Currency QAR => QARCache.Instance;
 		/// <summary>
 		/// Romanian Leu
 		/// </summary>
-		public static readonly Currency RON = new Currency("RON", "lei", 946, 0.01m);
+		public static Currency RON => RONCache.Instance;
 		/// <summary>
 		/// Serbian Dinar
 		/// </summary>
-		public static readonly Currency RSD = new Currency("RSD", "\u0414\u0438\u043d.", 941, 0.01m);
+		public static Currency RSD => RSDCache.Instance;
 		/// <summary>
 		/// Russian Ruble
 		/// </summary>
-		public static readonly Currency RUB = new Currency("RUB", "\u0440\u0443\u0431", 643, 0.01m);
+		public static Currency RUB => RUBCache.Instance;
 		/// <summary>
 		/// Rwanda Franc
 		/// </summary>
-		public static readonly Currency RWF = new Currency("RWF", "¤", 646, 1m);
+		public static Currency RWF => RWFCache.Instance;
 		/// <summary>
 		/// Saudi Riyal
 		/// </summary>
-		public static readonly Currency SAR = new Currency("SAR", "\ufdfc", 682, 0.01m);
+		public static Currency SAR => SARCache.Instance;
 		/// <summary>
 		/// Solomon Islands Dollar
 		/// </summary>
-		public static readonly Currency SBD = new Currency("SBD", "$", 90, 0.01m);
+		public static Currency SBD => SBDCache.Instance;
 		/// <summary>
 		/// Seychelles Rupee
 		/// </summary>
-		public static readonly Currency SCR = new Currency("SCR", "\u20a8", 690, 0.01m);
+		public static Currency SCR => SCRCache.Instance;
 		/// <summary>
 		/// Sudanese Pound
 		/// </summary>
-		public static readonly Currency SDG = new Currency("SDG", "¤", 938, 0.01m);
+		public static Currency SDG => SDGCache.Instance;
 		/// <summary>
 		/// Swedish Krona
 		/// </summary>
-		public static readonly Currency SEK = new Currency("SEK", "kr", 752, 0.01m);
+		public static Currency SEK => SEKCache.Instance;
 		/// <summary>
 		/// Singapore Dollar
 		/// </summary>
-		public static readonly Currency SGD = new Currency("SGD", "$", 702, 0.01m);
+		public static Currency SGD => SGDCache.Instance;
 		/// <summary>
 		/// Saint Helena Pound
 		/// </summary>
-		public static readonly Currency SHP = new Currency("SHP", "£", 654, 0.01m);
+		public static Currency SHP => SHPCache.Instance;
 		/// <summary>
 		/// Leone
 		/// </summary>
-		public static readonly Currency SLL = new Currency("SLL", "¤", 694, 0.01m);
+		public static Currency SLL => SLLCache.Instance;
 		/// <summary>
 		/// Somali Shilling
 		/// </summary>
-		public static readonly Currency SOS = new Currency("SOS", "S", 706, 0.01m);
+		public static Currency SOS => SOSCache.Instance;
 		/// <summary>
 		/// Surinam Dollar
 		/// </summary>
-		public static readonly Currency SRD = new Currency("SRD", "$", 968, 0.01m);
+		public static Currency SRD => SRDCache.Instance;
 		/// <summary>
 		/// South Sudanese Pound
 		/// </summary>
-		public static readonly Currency SSP = new Currency("SSP", "¤", 728, 0.01m);
+		public static Currency SSP => SSPCache.Instance;
 		/// <summary>
 		/// Dobra
 		/// </summary>
-		public static readonly Currency STD = new Currency("STD", "¤", 678, 0.01m);
+		public static Currency STD => STDCache.Instance;
 		/// <summary>
 		/// El Salvador Colon
 		/// </summary>
-		public static readonly Currency SVC = new Currency("SVC", "$", 222, 0.01m);
+		public static Currency SVC => SVCCache.Instance;
 		/// <summary>
 		/// Syrian Pound
 		/// </summary>
-		public static readonly Currency SYP = new Currency("SYP", "£", 760, 0.01m);
+		public static Currency SYP => SYPCache.Instance;
 		/// <summary>
 		/// Lilangeni
 		/// </summary>
-		public static readonly Currency SZL = new Currency("SZL", "¤", 748, 0.01m);
+		public static Currency SZL => SZLCache.Instance;
 		/// <summary>
 		/// Baht
 		/// </summary>
-		public static readonly Currency THB = new Currency("THB", "\u0e3f", 764, 0.01m);
+		public static Currency THB => THBCache.Instance;
 		/// <summary>
 		/// Somoni
 		/// </summary>
-		public static readonly Currency TJS = new Currency("TJS", "¤", 972, 0.01m);
+		public static Currency TJS => TJSCache.Instance;
 		/// <summary>
 		/// Turkmenistan New Manat
 		/// </summary>
-		public static readonly Currency TMT = new Currency("TMT", "¤", 934, 0.01m);
+		public static Currency TMT => TMTCache.Instance;
 		/// <summary>
 		/// Tunisian Dinar
 		/// </summary>
-		public static readonly Currency TND = new Currency("TND", "¤", 788, 0.001m);
+		public static Currency TND => TNDCache.Instance;
 		/// <summary>
 		/// Pa’anga
 		/// </summary>
-		public static readonly Currency TOP = new Currency("TOP", "¤", 776, 0.01m);
+		public static Currency TOP => TOPCache.Instance;
 		/// <summary>
 		/// Turkish Lira
 		/// </summary>
-		public static readonly Currency TRY = new Currency("TRY", "YTL", 949, 0.01m);
+		public static Currency TRY => TRYCache.Instance;
 		/// <summary>
 		/// Trinidad and Tobago Dollar
 		/// </summary>
-		public static readonly Currency TTD = new Currency("TTD", "TT$", 780, 0.01m);
+		public static Currency TTD => TTDCache.Instance;
 		/// <summary>
 		/// New Taiwan Dollar
 		/// </summary>
-		public static readonly Currency TWD = new Currency("TWD", "NT$", 901, 0.01m);
+		public static Currency TWD => TWDCache.Instance;
 		/// <summary>
 		/// Tanzanian Shilling
 		/// </summary>
-		public static readonly Currency TZS = new Currency("TZS", "¤", 834, 0.01m);
+		public static Currency TZS => TZSCache.Instance;
 		/// <summary>
 		/// Hryvnia
 		/// </summary>
-		public static readonly Currency UAH = new Currency("UAH", "\u20b4", 980, 0.01m);
+		public static Currency UAH => UAHCache.Instance;
 		/// <summary>
 		/// Uganda Shilling
 		/// </summary>
-		public static readonly Currency UGX = new Currency("UGX", "¤", 800, 1m);
+		public static Currency UGX => UGXCache.Instance;
 		/// <summary>
 		/// US Dollar
 		/// </summary>
-		public static readonly Currency USD = new Currency("USD", "$", 840, 0.01m);
+		public static Currency USD => USDCache.Instance;
 		/// <summary>
 		/// US Dollar (Next day)
 		/// </summary>
-		public static readonly Currency USN = new Currency("USN", "¤", 997, 0.01m);
+		public static Currency USN => USNCache.Instance;
 		/// <summary>
 		/// Uruguay Peso en Unidades Indexadas (URUIURUI)
 		/// </summary>
-		public static readonly Currency UYI = new Currency("UYI", "¤", 940, 1m);
+		public static Currency UYI => UYICache.Instance;
 		/// <summary>
 		/// Peso Uruguayo
 		/// </summary>
-		public static readonly Currency UYU = new Currency("UYU", "$U", 858, 0.01m);
+		public static Currency UYU => UYUCache.Instance;
 		/// <summary>
 		/// Uzbekistan Sum
 		/// </summary>
-		public static readonly Currency UZS = new Currency("UZS", "\u043b\u0432", 860, 0.01m);
+		public static Currency UZS => UZSCache.Instance;
 		/// <summary>
 		/// Bolívar
 		/// </summary>
-		public static readonly Currency VEF = new Currency("VEF", "Bs", 937, 0.01m);
+		public static Currency VEF => VEFCache.Instance;
 		/// <summary>
 		/// Dong
 		/// </summary>
-		public static readonly Currency VND = new Currency("VND", "\u20ab", 704, 1m);
+		public static Currency VND => VNDCache.Instance;
 		/// <summary>
 		/// Vatu
 		/// </summary>
-		public static readonly Currency VUV = new Currency("VUV", "¤", 548, 1m);
+		public static Currency VUV => VUVCache.Instance;
 		/// <summary>
 		/// Tala
 		/// </summary>
-		public static readonly Currency WST = new Currency("WST", "¤", 882, 0.01m);
+		public static Currency WST => WSTCache.Instance;
 		/// <summary>
 		/// CFA Franc BEAC
 		/// </summary>
-		public static readonly Currency XAF = new Currency("XAF", "¤", 950, 1m);
+		public static Currency XAF => XAFCache.Instance;
 		/// <summary>
 		/// Silver
 		/// </summary>
-		public static readonly Currency XAG = new Currency("XAG", "¤", 961, 0m);
+		public static Currency XAG => XAGCache.Instance;
 		/// <summary>
 		/// Gold
 		/// </summary>
-		public static readonly Currency XAU = new Currency("XAU", "¤", 959, 0m);
+		public static Currency XAU => XAUCache.Instance;
 		/// <summary>
 		/// Bond Markets Unit European Composite Unit (EURCO)
 		/// </summary>
-		public static readonly Currency XBA = new Currency("XBA", "¤", 955, 0m);
+		public static Currency XBA => XBACache.Instance;
 		/// <summary>
 		/// Bond Markets Unit European Monetary Unit (E.M.U.-6)
 		/// </summary>
-		public static readonly Currency XBB = new Currency("XBB", "¤", 956, 0m);
+		public static Currency XBB => XBBCache.Instance;
 		/// <summary>
 		/// Bond Markets Unit European Unit of Account 9 (E.U.A.-9)
 		/// </summary>
-		public static readonly Currency XBC = new Currency("XBC", "¤", 957, 0m);
+		public static Currency XBC => XBCCache.Instance;
 		/// <summary>
 		/// Bond Markets Unit European Unit of Account 17 (E.U.A.-17)
 		/// </summary>
-		public static readonly Currency XBD = new Currency("XBD", "¤", 958, 0m);
+		public static Currency XBD => XBDCache.Instance;
 		/// <summary>
 		/// East Caribbean Dollar
 		/// </summary>
-		public static readonly Currency XCD = new Currency("XCD", "$", 951, 0.01m);
+		public static Currency XCD => XCDCache.Instance;
 		/// <summary>
 		/// SDR (Special Drawing Right)
 		/// </summary>
-		public static readonly Currency XDR = new Currency("XDR", "¤", 960, 0m);
+		public static Currency XDR => XDRCache.Instance;
 		/// <summary>
 		/// CFA Franc BCEAO
 		/// </summary>
-		public static readonly Currency XOF = new Currency("XOF", "¤", 952, 1m);
+		public static Currency XOF => XOFCache.Instance;
 		/// <summary>
 		/// Palladium
 		/// </summary>
-		public static readonly Currency XPD = new Currency("XPD", "¤", 964, 0m);
+		public static Currency XPD => XPDCache.Instance;
 		/// <summary>
 		/// CFP Franc
 		/// </summary>
-		public static readonly Currency XPF = new Currency("XPF", "¤", 953, 1m);
+		public static Currency XPF => XPFCache.Instance;
 		/// <summary>
 		/// Platinum
 		/// </summary>
-		public static readonly Currency XPT = new Currency("XPT", "¤", 962, 0m);
+		public static Currency XPT => XPTCache.Instance;
 		/// <summary>
 		/// Sucre
 		/// </summary>
-		public static readonly Currency XSU = new Currency("XSU", "¤", 994, 0m);
+		public static Currency XSU => XSUCache.Instance;
 		/// <summary>
 		/// Codes specifically reserved for testing purposes
 		/// </summary>
-		public static readonly Currency XTS = new Currency("XTS", "¤", 963, 0m);
+		public static Currency XTS => XTSCache.Instance;
 		/// <summary>
 		/// ADB Unit of Account
 		/// </summary>
-		public static readonly Currency XUA = new Currency("XUA", "¤", 965, 0m);
+		public static Currency XUA => XUACache.Instance;
 		/// <summary>
 		/// The codes assigned for transactions where no currency is involved
 		/// </summary>
-		public static readonly Currency XXX = new Currency("XXX", "¤", 999, 0m);
+		public static Currency XXX => XXXCache.Instance;
 		/// <summary>
 		/// Yemeni Rial
 		/// </summary>
-		public static readonly Currency YER = new Currency("YER", "\ufdfc", 886, 0.01m);
+		public static Currency YER => YERCache.Instance;
 		/// <summary>
 		/// Rand
 		/// </summary>
-		public static readonly Currency ZAR = new Currency("ZAR", "R", 710, 0.01m);
+		public static Currency ZAR => ZARCache.Instance;
 		/// <summary>
 		/// Zambian Kwacha
 		/// </summary>
-		public static readonly Currency ZMW = new Currency("ZMW", "¤", 967, 0.01m);
+		public static Currency ZMW => ZMWCache.Instance;
 		/// <summary>
 		/// Zimbabwe Dollar
 		/// </summary>
-		public static readonly Currency ZWL = new Currency("ZWL", "¤", 932, 0.01m);
+		public static Currency ZWL => ZWLCache.Instance;
 
-		
-		/// <summary>
-		/// Parse number code of currency in ISO4217
-		/// </summary>
-		/// <param name="numCode">
-		/// number code of currency
-		/// </param>
-		/// <returns>
-		/// null if not found<see cref="ICurrency"/>
-		/// </returns>
-		public static Currency TryParse(int numCode)
-		{
-			switch(numCode)
-			{
-				case 8: return ALL;
-				case 12: return DZD;
-				case 32: return ARS;
-				case 36: return AUD;
-				case 44: return BSD;
-				case 48: return BHD;
-				case 50: return BDT;
-				case 51: return AMD;
-				case 52: return BBD;
-				case 60: return BMD;
-				case 64: return BTN;
-				case 68: return BOB;
-				case 72: return BWP;
-				case 84: return BZD;
-				case 90: return SBD;
-				case 96: return BND;
-				case 104: return MMK;
-				case 108: return BIF;
-				case 116: return KHR;
-				case 124: return CAD;
-				case 132: return CVE;
-				case 136: return KYD;
-				case 144: return LKR;
-				case 152: return CLP;
-				case 156: return CNY;
-				case 170: return COP;
-				case 174: return KMF;
-				case 188: return CRC;
-				case 191: return HRK;
-				case 192: return CUP;
-				case 203: return CZK;
-				case 208: return DKK;
-				case 214: return DOP;
-				case 222: return SVC;
-				case 230: return ETB;
-				case 232: return ERN;
-				case 238: return FKP;
-				case 242: return FJD;
-				case 262: return DJF;
-				case 270: return GMD;
-				case 292: return GIP;
-				case 320: return GTQ;
-				case 324: return GNF;
-				case 328: return GYD;
-				case 332: return HTG;
-				case 340: return HNL;
-				case 344: return HKD;
-				case 348: return HUF;
-				case 352: return ISK;
-				case 356: return INR;
-				case 360: return IDR;
-				case 364: return IRR;
-				case 368: return IQD;
-				case 376: return ILS;
-				case 388: return JMD;
-				case 392: return JPY;
-				case 398: return KZT;
-				case 400: return JOD;
-				case 404: return KES;
-				case 408: return KPW;
-				case 410: return KRW;
-				case 414: return KWD;
-				case 417: return KGS;
-				case 418: return LAK;
-				case 422: return LBP;
-				case 426: return LSL;
-				case 430: return LRD;
-				case 434: return LYD;
-				case 446: return MOP;
-				case 454: return MWK;
-				case 458: return MYR;
-				case 462: return MVR;
-				case 478: return MRO;
-				case 480: return MUR;
-				case 484: return MXN;
-				case 496: return MNT;
-				case 498: return MDL;
-				case 504: return MAD;
-				case 512: return OMR;
-				case 516: return NAD;
-				case 524: return NPR;
-				case 532: return ANG;
-				case 533: return AWG;
-				case 548: return VUV;
-				case 554: return NZD;
-				case 558: return NIO;
-				case 566: return NGN;
-				case 578: return NOK;
-				case 586: return PKR;
-				case 590: return PAB;
-				case 598: return PGK;
-				case 600: return PYG;
-				case 604: return PEN;
-				case 608: return PHP;
-				case 634: return QAR;
-				case 643: return RUB;
-				case 646: return RWF;
-				case 654: return SHP;
-				case 678: return STD;
-				case 682: return SAR;
-				case 690: return SCR;
-				case 694: return SLL;
-				case 702: return SGD;
-				case 704: return VND;
-				case 706: return SOS;
-				case 710: return ZAR;
-				case 728: return SSP;
-				case 748: return SZL;
-				case 752: return SEK;
-				case 756: return CHF;
-				case 760: return SYP;
-				case 764: return THB;
-				case 776: return TOP;
-				case 780: return TTD;
-				case 784: return AED;
-				case 788: return TND;
-				case 800: return UGX;
-				case 807: return MKD;
-				case 818: return EGP;
-				case 826: return GBP;
-				case 834: return TZS;
-				case 840: return USD;
-				case 858: return UYU;
-				case 860: return UZS;
-				case 882: return WST;
-				case 886: return YER;
-				case 901: return TWD;
-				case 931: return CUC;
-				case 932: return ZWL;
-				case 933: return BYN;
-				case 934: return TMT;
-				case 936: return GHS;
-				case 937: return VEF;
-				case 938: return SDG;
-				case 940: return UYI;
-				case 941: return RSD;
-				case 943: return MZN;
-				case 944: return AZN;
-				case 946: return RON;
-				case 947: return CHE;
-				case 948: return CHW;
-				case 949: return TRY;
-				case 950: return XAF;
-				case 951: return XCD;
-				case 952: return XOF;
-				case 953: return XPF;
-				case 955: return XBA;
-				case 956: return XBB;
-				case 957: return XBC;
-				case 958: return XBD;
-				case 959: return XAU;
-				case 960: return XDR;
-				case 961: return XAG;
-				case 962: return XPT;
-				case 963: return XTS;
-				case 964: return XPD;
-				case 965: return XUA;
-				case 967: return ZMW;
-				case 968: return SRD;
-				case 969: return MGA;
-				case 970: return COU;
-				case 971: return AFN;
-				case 972: return TJS;
-				case 973: return AOA;
-				case 975: return BGN;
-				case 976: return CDF;
-				case 977: return BAM;
-				case 978: return EUR;
-				case 979: return MXV;
-				case 980: return UAH;
-				case 981: return GEL;
-				case 984: return BOV;
-				case 985: return PLN;
-				case 986: return BRL;
-				case 990: return CLF;
-				case 994: return XSU;
-				case 997: return USN;
-				case 999: return XXX;
-
-				default: return null;
-			}
-		}
-
-		/// <summary>
-		/// Get all support currencies
-		/// </summary>
-		public static Currency[] GetAll()
+		internal static Currency[] GetAll()
 		{
 			return new Currency[] {
 				AFN,
@@ -1102,5 +901,895 @@ namespace NMoney.Iso4217
 				XAG,
 			};
 		}
+	}
+
+	internal class AEDCache
+	{
+		internal static readonly Currency Instance = new Currency("AED", "¤", 784, 0.01m);
+	}
+
+	internal class AFNCache
+	{
+		internal static readonly Currency Instance = new Currency("AFN", "\u060b", 971, 0.01m);
+	}
+
+	internal class ALLCache
+	{
+		internal static readonly Currency Instance = new Currency("ALL", "Lek", 8, 0.01m);
+	}
+
+	internal class AMDCache
+	{
+		internal static readonly Currency Instance = new Currency("AMD", "¤", 51, 0.01m);
+	}
+
+	internal class ANGCache
+	{
+		internal static readonly Currency Instance = new Currency("ANG", "\u0192", 532, 0.01m);
+	}
+
+	internal class AOACache
+	{
+		internal static readonly Currency Instance = new Currency("AOA", "¤", 973, 0.01m);
+	}
+
+	internal class ARSCache
+	{
+		internal static readonly Currency Instance = new Currency("ARS", "$", 32, 0.01m);
+	}
+
+	internal class AUDCache
+	{
+		internal static readonly Currency Instance = new Currency("AUD", "$", 36, 0.01m);
+	}
+
+	internal class AWGCache
+	{
+		internal static readonly Currency Instance = new Currency("AWG", "\u0192", 533, 0.01m);
+	}
+
+	internal class AZNCache
+	{
+		internal static readonly Currency Instance = new Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
+	}
+
+	internal class BAMCache
+	{
+		internal static readonly Currency Instance = new Currency("BAM", "KM", 977, 0.01m);
+	}
+
+	internal class BBDCache
+	{
+		internal static readonly Currency Instance = new Currency("BBD", "$", 52, 0.01m);
+	}
+
+	internal class BDTCache
+	{
+		internal static readonly Currency Instance = new Currency("BDT", "¤", 50, 0.01m);
+	}
+
+	internal class BGNCache
+	{
+		internal static readonly Currency Instance = new Currency("BGN", "\u043b\u0432", 975, 0.01m);
+	}
+
+	internal class BHDCache
+	{
+		internal static readonly Currency Instance = new Currency("BHD", "¤", 48, 0.001m);
+	}
+
+	internal class BIFCache
+	{
+		internal static readonly Currency Instance = new Currency("BIF", "¤", 108, 1m);
+	}
+
+	internal class BMDCache
+	{
+		internal static readonly Currency Instance = new Currency("BMD", "$", 60, 0.01m);
+	}
+
+	internal class BNDCache
+	{
+		internal static readonly Currency Instance = new Currency("BND", "$", 96, 0.01m);
+	}
+
+	internal class BOBCache
+	{
+		internal static readonly Currency Instance = new Currency("BOB", "$b", 68, 0.01m);
+	}
+
+	internal class BOVCache
+	{
+		internal static readonly Currency Instance = new Currency("BOV", "¤", 984, 0.01m);
+	}
+
+	internal class BRLCache
+	{
+		internal static readonly Currency Instance = new Currency("BRL", "R$", 986, 0.01m);
+	}
+
+	internal class BSDCache
+	{
+		internal static readonly Currency Instance = new Currency("BSD", "$", 44, 0.01m);
+	}
+
+	internal class BTNCache
+	{
+		internal static readonly Currency Instance = new Currency("BTN", "¤", 64, 0.01m);
+	}
+
+	internal class BWPCache
+	{
+		internal static readonly Currency Instance = new Currency("BWP", "P", 72, 0.01m);
+	}
+
+	internal class BYNCache
+	{
+		internal static readonly Currency Instance = new Currency("BYN", "p.", 933, 0.01m);
+	}
+
+	internal class BZDCache
+	{
+		internal static readonly Currency Instance = new Currency("BZD", "BZ$", 84, 0.01m);
+	}
+
+	internal class CADCache
+	{
+		internal static readonly Currency Instance = new Currency("CAD", "$", 124, 0.01m);
+	}
+
+	internal class CDFCache
+	{
+		internal static readonly Currency Instance = new Currency("CDF", "¤", 976, 0.01m);
+	}
+
+	internal class CHECache
+	{
+		internal static readonly Currency Instance = new Currency("CHE", "¤", 947, 0.01m);
+	}
+
+	internal class CHFCache
+	{
+		internal static readonly Currency Instance = new Currency("CHF", "CHF", 756, 0.01m);
+	}
+
+	internal class CHWCache
+	{
+		internal static readonly Currency Instance = new Currency("CHW", "¤", 948, 0.01m);
+	}
+
+	internal class CLFCache
+	{
+		internal static readonly Currency Instance = new Currency("CLF", "¤", 990, 0.0001m);
+	}
+
+	internal class CLPCache
+	{
+		internal static readonly Currency Instance = new Currency("CLP", "$", 152, 1m);
+	}
+
+	internal class CNYCache
+	{
+		internal static readonly Currency Instance = new Currency("CNY", "¥", 156, 0.01m);
+	}
+
+	internal class COPCache
+	{
+		internal static readonly Currency Instance = new Currency("COP", "$", 170, 0.01m);
+	}
+
+	internal class COUCache
+	{
+		internal static readonly Currency Instance = new Currency("COU", "¤", 970, 0.01m);
+	}
+
+	internal class CRCCache
+	{
+		internal static readonly Currency Instance = new Currency("CRC", "\u20a1", 188, 0.01m);
+	}
+
+	internal class CUCCache
+	{
+		internal static readonly Currency Instance = new Currency("CUC", "¤", 931, 0.01m);
+	}
+
+	internal class CUPCache
+	{
+		internal static readonly Currency Instance = new Currency("CUP", "\u20b1", 192, 0.01m);
+	}
+
+	internal class CVECache
+	{
+		internal static readonly Currency Instance = new Currency("CVE", "¤", 132, 0.01m);
+	}
+
+	internal class CZKCache
+	{
+		internal static readonly Currency Instance = new Currency("CZK", "K\u010d", 203, 0.01m);
+	}
+
+	internal class DJFCache
+	{
+		internal static readonly Currency Instance = new Currency("DJF", "¤", 262, 1m);
+	}
+
+	internal class DKKCache
+	{
+		internal static readonly Currency Instance = new Currency("DKK", "kr", 208, 0.01m);
+	}
+
+	internal class DOPCache
+	{
+		internal static readonly Currency Instance = new Currency("DOP", "RD$", 214, 0.01m);
+	}
+
+	internal class DZDCache
+	{
+		internal static readonly Currency Instance = new Currency("DZD", "¤", 12, 0.01m);
+	}
+
+	internal class EGPCache
+	{
+		internal static readonly Currency Instance = new Currency("EGP", "£", 818, 0.01m);
+	}
+
+	internal class ERNCache
+	{
+		internal static readonly Currency Instance = new Currency("ERN", "¤", 232, 0.01m);
+	}
+
+	internal class ETBCache
+	{
+		internal static readonly Currency Instance = new Currency("ETB", "¤", 230, 0.01m);
+	}
+
+	internal class EURCache
+	{
+		internal static readonly Currency Instance = new Currency("EUR", "\u20ac", 978, 0.01m);
+	}
+
+	internal class FJDCache
+	{
+		internal static readonly Currency Instance = new Currency("FJD", "$", 242, 0.01m);
+	}
+
+	internal class FKPCache
+	{
+		internal static readonly Currency Instance = new Currency("FKP", "£", 238, 0.01m);
+	}
+
+	internal class GBPCache
+	{
+		internal static readonly Currency Instance = new Currency("GBP", "£", 826, 0.01m);
+	}
+
+	internal class GELCache
+	{
+		internal static readonly Currency Instance = new Currency("GEL", "¤", 981, 0.01m);
+	}
+
+	internal class GHSCache
+	{
+		internal static readonly Currency Instance = new Currency("GHS", "¤", 936, 0.01m);
+	}
+
+	internal class GIPCache
+	{
+		internal static readonly Currency Instance = new Currency("GIP", "£", 292, 0.01m);
+	}
+
+	internal class GMDCache
+	{
+		internal static readonly Currency Instance = new Currency("GMD", "¤", 270, 0.01m);
+	}
+
+	internal class GNFCache
+	{
+		internal static readonly Currency Instance = new Currency("GNF", "¤", 324, 1m);
+	}
+
+	internal class GTQCache
+	{
+		internal static readonly Currency Instance = new Currency("GTQ", "Q", 320, 0.01m);
+	}
+
+	internal class GYDCache
+	{
+		internal static readonly Currency Instance = new Currency("GYD", "$", 328, 0.01m);
+	}
+
+	internal class HKDCache
+	{
+		internal static readonly Currency Instance = new Currency("HKD", "HK$", 344, 0.01m);
+	}
+
+	internal class HNLCache
+	{
+		internal static readonly Currency Instance = new Currency("HNL", "L", 340, 0.01m);
+	}
+
+	internal class HRKCache
+	{
+		internal static readonly Currency Instance = new Currency("HRK", "kn", 191, 0.01m);
+	}
+
+	internal class HTGCache
+	{
+		internal static readonly Currency Instance = new Currency("HTG", "¤", 332, 0.01m);
+	}
+
+	internal class HUFCache
+	{
+		internal static readonly Currency Instance = new Currency("HUF", "Ft", 348, 0.01m);
+	}
+
+	internal class IDRCache
+	{
+		internal static readonly Currency Instance = new Currency("IDR", "Rp", 360, 0.01m);
+	}
+
+	internal class ILSCache
+	{
+		internal static readonly Currency Instance = new Currency("ILS", "\u20aa", 376, 0.01m);
+	}
+
+	internal class INRCache
+	{
+		internal static readonly Currency Instance = new Currency("INR", "\u20a8", 356, 0.01m);
+	}
+
+	internal class IQDCache
+	{
+		internal static readonly Currency Instance = new Currency("IQD", "¤", 368, 0.001m);
+	}
+
+	internal class IRRCache
+	{
+		internal static readonly Currency Instance = new Currency("IRR", "\ufdfc", 364, 0.01m);
+	}
+
+	internal class ISKCache
+	{
+		internal static readonly Currency Instance = new Currency("ISK", "kr", 352, 1m);
+	}
+
+	internal class JMDCache
+	{
+		internal static readonly Currency Instance = new Currency("JMD", "J$", 388, 0.01m);
+	}
+
+	internal class JODCache
+	{
+		internal static readonly Currency Instance = new Currency("JOD", "¤", 400, 0.001m);
+	}
+
+	internal class JPYCache
+	{
+		internal static readonly Currency Instance = new Currency("JPY", "¥", 392, 1m);
+	}
+
+	internal class KESCache
+	{
+		internal static readonly Currency Instance = new Currency("KES", "¤", 404, 0.01m);
+	}
+
+	internal class KGSCache
+	{
+		internal static readonly Currency Instance = new Currency("KGS", "\u043b\u0432", 417, 0.01m);
+	}
+
+	internal class KHRCache
+	{
+		internal static readonly Currency Instance = new Currency("KHR", "\u17db", 116, 0.01m);
+	}
+
+	internal class KMFCache
+	{
+		internal static readonly Currency Instance = new Currency("KMF", "¤", 174, 1m);
+	}
+
+	internal class KPWCache
+	{
+		internal static readonly Currency Instance = new Currency("KPW", "\u20a9", 408, 0.01m);
+	}
+
+	internal class KRWCache
+	{
+		internal static readonly Currency Instance = new Currency("KRW", "¤", 410, 1m);
+	}
+
+	internal class KWDCache
+	{
+		internal static readonly Currency Instance = new Currency("KWD", "¤", 414, 0.001m);
+	}
+
+	internal class KYDCache
+	{
+		internal static readonly Currency Instance = new Currency("KYD", "$", 136, 0.01m);
+	}
+
+	internal class KZTCache
+	{
+		internal static readonly Currency Instance = new Currency("KZT", "\u043b\u0432", 398, 0.01m);
+	}
+
+	internal class LAKCache
+	{
+		internal static readonly Currency Instance = new Currency("LAK", "\u20ad", 418, 0.01m);
+	}
+
+	internal class LBPCache
+	{
+		internal static readonly Currency Instance = new Currency("LBP", "£", 422, 0.01m);
+	}
+
+	internal class LKRCache
+	{
+		internal static readonly Currency Instance = new Currency("LKR", "\u20a8", 144, 0.01m);
+	}
+
+	internal class LRDCache
+	{
+		internal static readonly Currency Instance = new Currency("LRD", "$", 430, 0.01m);
+	}
+
+	internal class LSLCache
+	{
+		internal static readonly Currency Instance = new Currency("LSL", "¤", 426, 0.01m);
+	}
+
+	internal class LYDCache
+	{
+		internal static readonly Currency Instance = new Currency("LYD", "¤", 434, 0.001m);
+	}
+
+	internal class MADCache
+	{
+		internal static readonly Currency Instance = new Currency("MAD", "¤", 504, 0.01m);
+	}
+
+	internal class MDLCache
+	{
+		internal static readonly Currency Instance = new Currency("MDL", "¤", 498, 0.01m);
+	}
+
+	internal class MGACache
+	{
+		internal static readonly Currency Instance = new Currency("MGA", "¤", 969, 0.01m);
+	}
+
+	internal class MKDCache
+	{
+		internal static readonly Currency Instance = new Currency("MKD", "\u0434\u0435\u043d", 807, 0.01m);
+	}
+
+	internal class MMKCache
+	{
+		internal static readonly Currency Instance = new Currency("MMK", "¤", 104, 0.01m);
+	}
+
+	internal class MNTCache
+	{
+		internal static readonly Currency Instance = new Currency("MNT", "\u20ae", 496, 0.01m);
+	}
+
+	internal class MOPCache
+	{
+		internal static readonly Currency Instance = new Currency("MOP", "¤", 446, 0.01m);
+	}
+
+	internal class MROCache
+	{
+		internal static readonly Currency Instance = new Currency("MRO", "¤", 478, 0.01m);
+	}
+
+	internal class MURCache
+	{
+		internal static readonly Currency Instance = new Currency("MUR", "\u20a8", 480, 0.01m);
+	}
+
+	internal class MVRCache
+	{
+		internal static readonly Currency Instance = new Currency("MVR", "¤", 462, 0.01m);
+	}
+
+	internal class MWKCache
+	{
+		internal static readonly Currency Instance = new Currency("MWK", "¤", 454, 0.01m);
+	}
+
+	internal class MXNCache
+	{
+		internal static readonly Currency Instance = new Currency("MXN", "$", 484, 0.01m);
+	}
+
+	internal class MXVCache
+	{
+		internal static readonly Currency Instance = new Currency("MXV", "¤", 979, 0.01m);
+	}
+
+	internal class MYRCache
+	{
+		internal static readonly Currency Instance = new Currency("MYR", "RM", 458, 0.01m);
+	}
+
+	internal class MZNCache
+	{
+		internal static readonly Currency Instance = new Currency("MZN", "MT", 943, 0.01m);
+	}
+
+	internal class NADCache
+	{
+		internal static readonly Currency Instance = new Currency("NAD", "$", 516, 0.01m);
+	}
+
+	internal class NGNCache
+	{
+		internal static readonly Currency Instance = new Currency("NGN", "\u20a6", 566, 0.01m);
+	}
+
+	internal class NIOCache
+	{
+		internal static readonly Currency Instance = new Currency("NIO", "C$", 558, 0.01m);
+	}
+
+	internal class NOKCache
+	{
+		internal static readonly Currency Instance = new Currency("NOK", "kr", 578, 0.01m);
+	}
+
+	internal class NPRCache
+	{
+		internal static readonly Currency Instance = new Currency("NPR", "\u20a8", 524, 0.01m);
+	}
+
+	internal class NZDCache
+	{
+		internal static readonly Currency Instance = new Currency("NZD", "$", 554, 0.01m);
+	}
+
+	internal class OMRCache
+	{
+		internal static readonly Currency Instance = new Currency("OMR", "\ufdfc", 512, 0.001m);
+	}
+
+	internal class PABCache
+	{
+		internal static readonly Currency Instance = new Currency("PAB", "B/.", 590, 0.01m);
+	}
+
+	internal class PENCache
+	{
+		internal static readonly Currency Instance = new Currency("PEN", "S/.", 604, 0.01m);
+	}
+
+	internal class PGKCache
+	{
+		internal static readonly Currency Instance = new Currency("PGK", "¤", 598, 0.01m);
+	}
+
+	internal class PHPCache
+	{
+		internal static readonly Currency Instance = new Currency("PHP", "Php", 608, 0.01m);
+	}
+
+	internal class PKRCache
+	{
+		internal static readonly Currency Instance = new Currency("PKR", "\u20a8", 586, 0.01m);
+	}
+
+	internal class PLNCache
+	{
+		internal static readonly Currency Instance = new Currency("PLN", "z\u0142", 985, 0.01m);
+	}
+
+	internal class PYGCache
+	{
+		internal static readonly Currency Instance = new Currency("PYG", "Gs", 600, 1m);
+	}
+
+	internal class QARCache
+	{
+		internal static readonly Currency Instance = new Currency("QAR", "\ufdfc", 634, 0.01m);
+	}
+
+	internal class RONCache
+	{
+		internal static readonly Currency Instance = new Currency("RON", "lei", 946, 0.01m);
+	}
+
+	internal class RSDCache
+	{
+		internal static readonly Currency Instance = new Currency("RSD", "\u0414\u0438\u043d.", 941, 0.01m);
+	}
+
+	internal class RUBCache
+	{
+		internal static readonly Currency Instance = new Currency("RUB", "\u0440\u0443\u0431", 643, 0.01m);
+	}
+
+	internal class RWFCache
+	{
+		internal static readonly Currency Instance = new Currency("RWF", "¤", 646, 1m);
+	}
+
+	internal class SARCache
+	{
+		internal static readonly Currency Instance = new Currency("SAR", "\ufdfc", 682, 0.01m);
+	}
+
+	internal class SBDCache
+	{
+		internal static readonly Currency Instance = new Currency("SBD", "$", 90, 0.01m);
+	}
+
+	internal class SCRCache
+	{
+		internal static readonly Currency Instance = new Currency("SCR", "\u20a8", 690, 0.01m);
+	}
+
+	internal class SDGCache
+	{
+		internal static readonly Currency Instance = new Currency("SDG", "¤", 938, 0.01m);
+	}
+
+	internal class SEKCache
+	{
+		internal static readonly Currency Instance = new Currency("SEK", "kr", 752, 0.01m);
+	}
+
+	internal class SGDCache
+	{
+		internal static readonly Currency Instance = new Currency("SGD", "$", 702, 0.01m);
+	}
+
+	internal class SHPCache
+	{
+		internal static readonly Currency Instance = new Currency("SHP", "£", 654, 0.01m);
+	}
+
+	internal class SLLCache
+	{
+		internal static readonly Currency Instance = new Currency("SLL", "¤", 694, 0.01m);
+	}
+
+	internal class SOSCache
+	{
+		internal static readonly Currency Instance = new Currency("SOS", "S", 706, 0.01m);
+	}
+
+	internal class SRDCache
+	{
+		internal static readonly Currency Instance = new Currency("SRD", "$", 968, 0.01m);
+	}
+
+	internal class SSPCache
+	{
+		internal static readonly Currency Instance = new Currency("SSP", "¤", 728, 0.01m);
+	}
+
+	internal class STDCache
+	{
+		internal static readonly Currency Instance = new Currency("STD", "¤", 678, 0.01m);
+	}
+
+	internal class SVCCache
+	{
+		internal static readonly Currency Instance = new Currency("SVC", "$", 222, 0.01m);
+	}
+
+	internal class SYPCache
+	{
+		internal static readonly Currency Instance = new Currency("SYP", "£", 760, 0.01m);
+	}
+
+	internal class SZLCache
+	{
+		internal static readonly Currency Instance = new Currency("SZL", "¤", 748, 0.01m);
+	}
+
+	internal class THBCache
+	{
+		internal static readonly Currency Instance = new Currency("THB", "\u0e3f", 764, 0.01m);
+	}
+
+	internal class TJSCache
+	{
+		internal static readonly Currency Instance = new Currency("TJS", "¤", 972, 0.01m);
+	}
+
+	internal class TMTCache
+	{
+		internal static readonly Currency Instance = new Currency("TMT", "¤", 934, 0.01m);
+	}
+
+	internal class TNDCache
+	{
+		internal static readonly Currency Instance = new Currency("TND", "¤", 788, 0.001m);
+	}
+
+	internal class TOPCache
+	{
+		internal static readonly Currency Instance = new Currency("TOP", "¤", 776, 0.01m);
+	}
+
+	internal class TRYCache
+	{
+		internal static readonly Currency Instance = new Currency("TRY", "YTL", 949, 0.01m);
+	}
+
+	internal class TTDCache
+	{
+		internal static readonly Currency Instance = new Currency("TTD", "TT$", 780, 0.01m);
+	}
+
+	internal class TWDCache
+	{
+		internal static readonly Currency Instance = new Currency("TWD", "NT$", 901, 0.01m);
+	}
+
+	internal class TZSCache
+	{
+		internal static readonly Currency Instance = new Currency("TZS", "¤", 834, 0.01m);
+	}
+
+	internal class UAHCache
+	{
+		internal static readonly Currency Instance = new Currency("UAH", "\u20b4", 980, 0.01m);
+	}
+
+	internal class UGXCache
+	{
+		internal static readonly Currency Instance = new Currency("UGX", "¤", 800, 1m);
+	}
+
+	internal class USDCache
+	{
+		internal static readonly Currency Instance = new Currency("USD", "$", 840, 0.01m);
+	}
+
+	internal class USNCache
+	{
+		internal static readonly Currency Instance = new Currency("USN", "¤", 997, 0.01m);
+	}
+
+	internal class UYICache
+	{
+		internal static readonly Currency Instance = new Currency("UYI", "¤", 940, 1m);
+	}
+
+	internal class UYUCache
+	{
+		internal static readonly Currency Instance = new Currency("UYU", "$U", 858, 0.01m);
+	}
+
+	internal class UZSCache
+	{
+		internal static readonly Currency Instance = new Currency("UZS", "\u043b\u0432", 860, 0.01m);
+	}
+
+	internal class VEFCache
+	{
+		internal static readonly Currency Instance = new Currency("VEF", "Bs", 937, 0.01m);
+	}
+
+	internal class VNDCache
+	{
+		internal static readonly Currency Instance = new Currency("VND", "\u20ab", 704, 1m);
+	}
+
+	internal class VUVCache
+	{
+		internal static readonly Currency Instance = new Currency("VUV", "¤", 548, 1m);
+	}
+
+	internal class WSTCache
+	{
+		internal static readonly Currency Instance = new Currency("WST", "¤", 882, 0.01m);
+	}
+
+	internal class XAFCache
+	{
+		internal static readonly Currency Instance = new Currency("XAF", "¤", 950, 1m);
+	}
+
+	internal class XAGCache
+	{
+		internal static readonly Currency Instance = new Currency("XAG", "¤", 961, 0m);
+	}
+
+	internal class XAUCache
+	{
+		internal static readonly Currency Instance = new Currency("XAU", "¤", 959, 0m);
+	}
+
+	internal class XBACache
+	{
+		internal static readonly Currency Instance = new Currency("XBA", "¤", 955, 0m);
+	}
+
+	internal class XBBCache
+	{
+		internal static readonly Currency Instance = new Currency("XBB", "¤", 956, 0m);
+	}
+
+	internal class XBCCache
+	{
+		internal static readonly Currency Instance = new Currency("XBC", "¤", 957, 0m);
+	}
+
+	internal class XBDCache
+	{
+		internal static readonly Currency Instance = new Currency("XBD", "¤", 958, 0m);
+	}
+
+	internal class XCDCache
+	{
+		internal static readonly Currency Instance = new Currency("XCD", "$", 951, 0.01m);
+	}
+
+	internal class XDRCache
+	{
+		internal static readonly Currency Instance = new Currency("XDR", "¤", 960, 0m);
+	}
+
+	internal class XOFCache
+	{
+		internal static readonly Currency Instance = new Currency("XOF", "¤", 952, 1m);
+	}
+
+	internal class XPDCache
+	{
+		internal static readonly Currency Instance = new Currency("XPD", "¤", 964, 0m);
+	}
+
+	internal class XPFCache
+	{
+		internal static readonly Currency Instance = new Currency("XPF", "¤", 953, 1m);
+	}
+
+	internal class XPTCache
+	{
+		internal static readonly Currency Instance = new Currency("XPT", "¤", 962, 0m);
+	}
+
+	internal class XSUCache
+	{
+		internal static readonly Currency Instance = new Currency("XSU", "¤", 994, 0m);
+	}
+
+	internal class XTSCache
+	{
+		internal static readonly Currency Instance = new Currency("XTS", "¤", 963, 0m);
+	}
+
+	internal class XUACache
+	{
+		internal static readonly Currency Instance = new Currency("XUA", "¤", 965, 0m);
+	}
+
+	internal class XXXCache
+	{
+		internal static readonly Currency Instance = new Currency("XXX", "¤", 999, 0m);
+	}
+
+	internal class YERCache
+	{
+		internal static readonly Currency Instance = new Currency("YER", "\ufdfc", 886, 0.01m);
+	}
+
+	internal class ZARCache
+	{
+		internal static readonly Currency Instance = new Currency("ZAR", "R", 710, 0.01m);
+	}
+
+	internal class ZMWCache
+	{
+		internal static readonly Currency Instance = new Currency("ZMW", "¤", 967, 0.01m);
+	}
+
+	internal class ZWLCache
+	{
+		internal static readonly Currency Instance = new Currency("ZWL", "¤", 932, 0.01m);
 	}
 }

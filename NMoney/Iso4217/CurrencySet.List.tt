@@ -9,8 +9,6 @@
 	var xmlEntries = XmlCurrencyEntries.Load(Host.ResolvePath("../../doc/list_one.xml"));
 	var symbols = CurrencySymbols.Load(Host.ResolvePath("../../doc/unicodeSymbols.csv"));
 	var codes = xmlEntries.List.Where(_ => _.Code != null).Select(_ => _.Code).Distinct().ToList();
-
-	SortedList<int, string> numCodes = new SortedList<int, string>();
 #>
 using System;
 using System.Collections.Generic;
@@ -19,42 +17,14 @@ namespace NMoney.Iso4217
 {
 	public partial class CurrencySet
 	{
-<#
-		foreach(var xmlEntry in xmlEntries.List.Where(_ => _.Code != null).Distinct().OrderBy(_ => _.Code))
-		{
-			if(xmlEntry.NumCode > 0)
-				numCodes.Add(xmlEntry.NumCode, xmlEntry.Code);
-			
-		#>		/// <summary>
+<#		foreach(var xmlEntry in xmlEntries.List.Where(_ => _.Code != null).Distinct().OrderBy(_ => _.Code)) {
+#>		/// <summary>
 		/// <#= xmlEntry.Name #>
 		/// </summary>
-		public static readonly Currency <#= xmlEntry.Code #> = new Currency("<#= xmlEntry.Code #>", "<#= symbols.Get(xmlEntry.Code) #>", <#= xmlEntry.NumCode #>, <#= xmlEntry.MinorUnit #>);
+		public static Currency <#= xmlEntry.Code #> => <#= xmlEntry.Code #>Cache.Instance;
 <# } #>
-		
-		/// <summary>
-		/// Parse number code of currency in ISO4217
-		/// </summary>
-		/// <param name="numCode">
-		/// number code of currency
-		/// </param>
-		/// <returns>
-		/// null if not found<see cref="ICurrency"/>
-		/// </returns>
-		public static Currency TryParse(int numCode)
-		{
-			switch(numCode)
-			{
-<# foreach(var pair in numCodes) {
-#>				case <#= pair.Key #>: return <#= pair.Value #>;
-<# } #>
-				default: return null;
-			}
-		}
 
-		/// <summary>
-		/// Get all support currencies
-		/// </summary>
-		public static Currency[] GetAll()
+		internal static Currency[] GetAll()
 		{
 			return new Currency[] {
 <# foreach(string code in codes) {
@@ -63,4 +33,12 @@ namespace NMoney.Iso4217
 #>			};
 		}
 	}
+<#		foreach(var xmlEntry in xmlEntries.List.Where(_ => _.Code != null).Distinct().OrderBy(_ => _.Code)) {
+#>
+
+	internal class <#= xmlEntry.Code #>Cache
+	{
+		internal static readonly Currency Instance = new Currency("<#= xmlEntry.Code #>", "<#= symbols.Get(xmlEntry.Code) #>", <#= xmlEntry.NumCode #>, <#= xmlEntry.MinorUnit #>);
+	}
+<# } #>
 }
