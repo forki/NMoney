@@ -4,21 +4,16 @@ using System.Globalization;
 
 namespace NMoney.Iso4217
 {
-	internal class Currency: ICurrency, IFormattable
+	public class Currency: NMoney.Currency, IFormattable
 	{
-		private static readonly ResourceManager _rMan = new ResourceManager("NMoney.Dic", typeof(Currency).Assembly);
-		
-		private readonly string _charCode;
+		private static readonly ResourceManager _rMan = new ResourceManager("NMoney.Iso4217.Dic", typeof(Currency).Assembly);
+
 		private readonly int _numCode;
-		private readonly string _symbol;
-		private readonly decimal _minorUnit;
 		
 		internal Currency(string charCode, string sym, int num, decimal mu)
+			:base(charCode, sym, mu)
 		{
-			_charCode = charCode;
 			_numCode = num;
-			_symbol = sym;
-			_minorUnit = mu;
 		}
 		
 		public override string ToString()
@@ -31,27 +26,19 @@ namespace NMoney.Iso4217
 			switch(format)
 			{
 				case "s":
-					return _symbol;
+					return Symbol;
 				case "c":
-					return _charCode;
+					return CharCode;
 				case null:
 				case "":
 				case "n":
-					return _rMan.GetString(_charCode, formatProvider as CultureInfo);
+					return _rMan.GetString(CharCode, formatProvider as CultureInfo);
 				default:
 					throw new FormatException($"unexpected format '{format}'");
 			}
 		}
 
-		#region ICurrency implementation
-		public string CharCode => _charCode;
-
 		public int NumCode => _numCode;
-
-		public string Symbol => _symbol;
-
-		public decimal MinorUnit => _minorUnit;
-		#endregion
 	}
 }
 

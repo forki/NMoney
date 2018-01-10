@@ -1,12 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace NMoney.Iso4217
 {
 	/// <summary>
 	/// The currencies standard ISO 4217
 	/// </summary>
-	public partial class CurrencyCollection : CurrencyCollection<string>
+	public partial class CurrencySet : NMoney.CurrencySet<Iso4217.Currency>
 	{
+		private static readonly Lazy<CurrencySet> _lazy = new Lazy<CurrencySet>(() => new CurrencySet(), true);
+
+		public static CurrencySet Instance => _lazy.Value;
+
+		private CurrencySet() : base(GetAll())
+		{
+		}
+
 		/// <summary>
 		/// ISO 4217 contain this instance of currency
 		/// </summary>
@@ -15,7 +24,7 @@ namespace NMoney.Iso4217
 		/// </param>
 		public bool Contain(ICurrency currency)
 		{
-			return currency is Currency;
+			return currency is Iso4217.Currency;
 		}
 		
 		/// <summary>
@@ -24,7 +33,7 @@ namespace NMoney.Iso4217
 		/// <param name="charCode">
 		/// character code
 		/// </param>
-		public static bool Contain(string charCode)
+		public bool Contain(string charCode)
 		{
 			return TryParse(charCode) != null;
 		}
@@ -36,7 +45,7 @@ namespace NMoney.Iso4217
 		/// character code
 		/// </param>
 		/// <exception cref="System.NotSupportedException">if ISO 4217 not contain this currency</exception>
-		public static ICurrency Parse(string charCode)
+		public ICurrency Parse(string charCode)
 		{
 			var currency = TryParse(charCode);
 			if (currency != null)
@@ -52,31 +61,13 @@ namespace NMoney.Iso4217
 		/// number code
 		/// </param>
 		/// <exception cref="System.NotSupportedException">if ISO 4217 not contain this currency</exception>
-		public static ICurrency Parse(int numCode)
+		public ICurrency Parse(int numCode)
 		{
 			var currency = TryParse(numCode);
 			if (currency != null)
 				return currency;
 
 			throw new NotSupportedException("currency code '" + numCode + "' not supported in ISO4217");
-		}
-		
-		/// <summary>
-		/// Return currency from character code
-		/// </summary>
-		/// <param name="charCode">
-		/// character code
-		/// </param>
-		/// <param name="currency">
-		/// currency
-		/// </param>
-		/// <returns>
-		/// true if ISO 4217 contain this currency
-		/// </returns>
-		public static bool TryParse(string charCode, out ICurrency currency)
-		{
-			currency = TryParse(charCode);
-			return currency != null;
 		}
 		
 		/// <summary>
@@ -91,7 +82,7 @@ namespace NMoney.Iso4217
 		/// <returns>
 		/// true if ISO 4217 contain this currency
 		/// </returns>
-		public static bool TryParse(int numCode, out ICurrency currency)
+		public bool TryParse(int numCode, out ICurrency currency)
 		{
 			currency = TryParse(numCode);
 			return currency != null;

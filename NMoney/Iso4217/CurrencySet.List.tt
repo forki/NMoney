@@ -15,9 +15,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace NMoney
+namespace NMoney.Iso4217
 {
-	public static partial class Iso4217
+	public partial class CurrencySet
 	{
 <#
 		foreach(var xmlEntry in xmlEntries.List.Where(_ => _.Code != null).Distinct().OrderBy(_ => _.Code))
@@ -28,28 +28,8 @@ namespace NMoney
 		#>		/// <summary>
 		/// <#= xmlEntry.Name #>
 		/// </summary>
-		public static readonly ICurrency <#= xmlEntry.Code #> = new Iso4217Currency("<#= xmlEntry.Code #>", "<#= symbols.Get(xmlEntry.Code) #>", <#= xmlEntry.NumCode #>, <#= xmlEntry.MinorUnit #>);
+		public static readonly Currency <#= xmlEntry.Code #> = new Currency("<#= xmlEntry.Code #>", "<#= symbols.Get(xmlEntry.Code) #>", <#= xmlEntry.NumCode #>, <#= xmlEntry.MinorUnit #>);
 <# } #>
-		
-		/// <summary>
-		/// Parse char code of currency in ISO4217
-		/// </summary>
-		/// <param name="charCode">
-		/// char code of currency
-		/// </param>
-		/// <returns>
-		/// null if not found<see cref="ICurrency"/>
-		/// </returns>
-		public static ICurrency TryParse(string charCode)
-		{
-			switch(charCode.ToUpperInvariant())
-			{
-<# foreach(string code in codes) {
-#>				case "<#= code #>": return <#= code #>;
-<# } #>
-				default: return null;
-			}
-		}
 		
 		/// <summary>
 		/// Parse number code of currency in ISO4217
@@ -60,7 +40,7 @@ namespace NMoney
 		/// <returns>
 		/// null if not found<see cref="ICurrency"/>
 		/// </returns>
-		public static ICurrency TryParse(int numCode)
+		public static Currency TryParse(int numCode)
 		{
 			switch(numCode)
 			{
@@ -74,10 +54,13 @@ namespace NMoney
 		/// <summary>
 		/// Get all support currencies
 		/// </summary>
-		public static IEnumerable<ICurrency> GetAll()
+		public static Currency[] GetAll()
 		{
+			return new Currency[] {
 <# foreach(string code in codes) {
-#>			yield return <#= code #>;
-<# } #>		}
+#>				<#= code #>,
+<# }
+#>			};
+		}
 	}
 }

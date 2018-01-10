@@ -43,13 +43,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="CurrencyCollection.cs" />
+    <Compile Include="Currency.cs" />
+    <Compile Include="CurrencySetExtensions.cs" />
+    <Compile Include="ICurrencySet.cs" />
+    <Compile Include="CurrencySet.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="ICurrency.cs" />
     <Compile Include="Iso4217\Currency.cs" />
-    <Compile Include="Iso4217\Iso4217.cs" />
-    <Compile Include="Iso4217\Iso4217.List.cs">
-      <DependentUpon>Iso4217.List.tt</DependentUpon>
+    <Compile Include="Iso4217\CurrencySet.cs" />
+    <Compile Include="Iso4217\CurrencySet.List.cs">
+      <DependentUpon>CurrencySet.List.tt</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -61,9 +64,9 @@
     <None Include="paket.template" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Iso4217\Iso4217.List.tt">
+    <None Include="Iso4217\CurrencySet.List.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Iso4217.List.cs</LastGenOutput>
+      <LastGenOutput>CurrencySet.List.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
