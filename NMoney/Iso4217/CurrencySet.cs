@@ -23,44 +23,6 @@ namespace NMoney.Iso4217
 		}
 
 		/// <summary>
-		/// ISO 4217 contain this instance of currency
-		/// </summary>
-		/// <param name="currency">
-		/// instance
-		/// </param>
-		public bool Contain(ICurrency currency)
-		{
-			return currency is Iso4217.Currency;
-		}
-		
-		/// <summary>
-		/// ISO 4217 contains an instance of a character code
-		/// </summary>
-		/// <param name="charCode">
-		/// character code
-		/// </param>
-		public bool Contain(string charCode)
-		{
-			return TryParse(charCode) != null;
-		}
-
-		/// <summary>
-		/// Return currency from character code
-		/// </summary>
-		/// <param name="charCode">
-		/// character code
-		/// </param>
-		/// <exception cref="System.NotSupportedException">if ISO 4217 not contain this currency</exception>
-		public ICurrency Parse(string charCode)
-		{
-			var currency = TryParse(charCode);
-			if (currency != null)
-				return currency;
-
-			throw new NotSupportedException("currency code '" + charCode + "' not supported in ISO4217");
-		}
-
-		/// <summary>
 		/// Parse number code of currency in ISO4217
 		/// </summary>
 		/// <param name="numCode">

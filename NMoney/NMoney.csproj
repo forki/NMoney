@@ -44,9 +44,11 @@
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Currency.cs" />
+    <Compile Include="CurrencySet.cs" />
     <Compile Include="CurrencySetExtensions.cs" />
     <Compile Include="ICurrencySet.cs" />
-    <Compile Include="CurrencySet.cs" />
+    <Compile Include="ICurrencySet%271.cs" />
+    <Compile Include="CurrencySet%271.cs" />
     <Compile Include="Money.cs" />
     <Compile Include="ICurrency.cs" />
     <Compile Include="Iso4217\Currency.cs" />

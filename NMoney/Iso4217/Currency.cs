@@ -21,9 +21,9 @@ namespace NMoney.Iso4217
 			return ToString("n", null);
 		}
 
-		public string ToString(string format, IFormatProvider formatProvider)
+		public virtual string ToString(string format, IFormatProvider formatProvider)
 		{
-			switch(format)
+			switch (format)
 			{
 				case "s":
 					return Symbol;

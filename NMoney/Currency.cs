@@ -6,7 +6,7 @@ namespace NMoney
 {
 	public class Currency: ICurrency
 	{
-		internal Currency(string charCode, string sym, decimal mu)
+		public Currency(string charCode, string sym, decimal mu)
 		{
 			CharCode = charCode;
 			Symbol = sym;
