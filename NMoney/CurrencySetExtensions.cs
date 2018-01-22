@@ -7,6 +7,12 @@ namespace NMoney
 	/// </summary>
 	public static class CurrencySetExtensions
 	{
+		public static bool Contain(this ICurrencySet currencySet, ICurrency currency)
+		{
+			var candidate = currencySet.TryParse(currency.CharCode);
+			return candidate != null && candidate.Equals(currency);
+		}
+
 		public static bool Contain<T>(this ICurrencySet<T> currencySet, T currency) where T: class, ICurrency
 		{
 			var candidate = currencySet.TryParse(currency.CharCode);

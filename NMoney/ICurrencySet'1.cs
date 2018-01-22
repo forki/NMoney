@@ -5,7 +5,7 @@ namespace NMoney
 	/// <summary>
 	/// Supported currency collection in your application or any serializer
 	/// </summary>
-	public interface ICurrencySet<out T> : IReadOnlyCollection<T> where T: class, ICurrency
+	public interface ICurrencySet<out T>: ICurrencySet where T: class, ICurrency
 	{
 		/// <summary>
 		/// Parse char code of currency in this set
@@ -16,6 +16,11 @@ namespace NMoney
 		/// <returns>
 		/// null if not found
 		/// </returns>
-		T TryParse(string charCode);
+		new T TryParse(string charCode);
+
+		/// <summary>
+		/// All contained curencies
+		/// </summary>
+		new IReadOnlyCollection<T> AllCurencies { get; }
 	}
 }

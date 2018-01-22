@@ -13,7 +13,7 @@ namespace NMoney
 		[Test]
 		public void AllCurrensiesFromIso4217()
 		{
-			foreach (var c in _set)
+			foreach (var c in _set.AllCurencies)
 			{
 				Assert.AreEqual(c, _set.Parse(c.CharCode));
 				Assert.AreEqual(c, _set.Parse(c.NumCode));

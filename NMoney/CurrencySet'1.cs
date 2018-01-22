@@ -22,13 +22,18 @@ namespace NMoney
 				_codeMap.Add(c.CharCode, c);
 		}
 
-		public int Count => _currencies.Count;
-
-		public IEnumerator<T> GetEnumerator() => _currencies.GetEnumerator();
-
-		IEnumerator IEnumerable.GetEnumerator() => _currencies.GetEnumerator();
+		public IReadOnlyCollection<T> AllCurencies => _currencies;
 
 		public T TryParse(string charCode)
+		{
+			T currency;
+			_codeMap.TryGetValue(charCode, out currency);
+			return currency;
+		}
+
+		IReadOnlyCollection<ICurrency> ICurrencySet.AllCurencies => _currencies;
+
+		ICurrency ICurrencySet.TryParse(string charCode)
 		{
 			T currency;
 			_codeMap.TryGetValue(charCode, out currency);
