@@ -18,12 +18,17 @@ namespace NMoney
 			return CharCode;
 		}
 
-		public bool Equals(ICurrency other)
+		public virtual bool Equals(ICurrency other)
 		{
 			if (object.ReferenceEquals(other, null))
 				return false;
 
 			return object.ReferenceEquals(other, this);
+		}
+
+		public override bool Equals(object obj)
+		{
+			return Equals(obj as ICurrency);
 		}
 
 		public string CharCode { get; private set; }

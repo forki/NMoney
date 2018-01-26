@@ -9,11 +9,9 @@ namespace NMoney
 	public class ZeroTest
 	{
 		[Test]
-		public void Create()
+		public void CreateWithNoCurrency()
 		{
-			var mu = new Money(0m, null);
-
-			Assert.IsTrue(mu == Money.Zero);
+			Assert.Throws<ArgumentNullException>(() => new Money(0m, null));
 		}
 
 		[Test]
@@ -130,7 +128,7 @@ namespace NMoney
 		public void HashCode()
 		{
 			var m1 = Money.Zero.GetHashCode();
-			var m1E = new Money(0m, null).GetHashCode();
+			var m1E = (Money.Zero * 2).GetHashCode();
 			var m2 = Iso4217.CurrencySet.RUB.Money(1m).GetHashCode();
 			var m3 = (Iso4217.CurrencySet.RUB.Money(1m) * 0).GetHashCode();
 
