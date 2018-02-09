@@ -74,6 +74,11 @@ namespace NMoney
 			{
 				throw new NotImplementedException();
 			}
+
+			public string ToString(string format, IFormatProvider formatProvider)
+			{
+				throw new NotImplementedException();
+			}
 		}
 
 		[Test]

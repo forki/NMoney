@@ -5,7 +5,7 @@ namespace NMoney
 	/// <summary>
 	/// interface providing information on currency
 	/// </summary>
-	public interface ICurrency: IEquatable<ICurrency>
+	public interface ICurrency: IEquatable<ICurrency>, IFormattable
 	{
 		/// <summary>
 		/// character code

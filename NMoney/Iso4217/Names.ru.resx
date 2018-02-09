@@ -174,6 +174,9 @@
   <data name="BOB" xml:space="preserve">
     <value>Боливиано</value>
   </data>
+  <data name="BOV" xml:space="preserve">
+    <value>Mvdol</value>
+  </data>
   <data name="BRL" xml:space="preserve">
     <value>Бразильский реал</value>
   </data>
@@ -198,8 +201,17 @@
   <data name="CDF" xml:space="preserve">
     <value>Конголезский франк</value>
   </data>
+  <data name="CHE" xml:space="preserve">
+    <value>WIR Евро</value>
+  </data>
   <data name="CHF" xml:space="preserve">
     <value>Швейцарский франк</value>
+  </data>
+  <data name="CHW" xml:space="preserve">
+    <value>WIR Франк</value>
+  </data>
+  <data name="CLF" xml:space="preserve">
+    <value>Унидад де Фоменто</value>
   </data>
   <data name="CLP" xml:space="preserve">
     <value>Чилийское песо</value>
@@ -210,8 +222,14 @@
   <data name="COP" xml:space="preserve">
     <value>Колумбийское песо</value>
   </data>
+  <data name="COU" xml:space="preserve">
+    <value>Unidad de Valor Real</value>
+  </data>
   <data name="CRC" xml:space="preserve">
     <value>Костариканский колон</value>
+  </data>
+  <data name="CUC" xml:space="preserve">
+    <value>Кубинское конвертируемое песо</value>
   </data>
   <data name="CUP" xml:space="preserve">
     <value>Кубинское песо</value>
@@ -405,6 +423,9 @@
   <data name="MXN" xml:space="preserve">
     <value>Мексиканское песо</value>
   </data>
+  <data name="MXV" xml:space="preserve">
+    <value>Mexican Unidad de Inversion (UDI)</value>
+  </data>
   <data name="MYR" xml:space="preserve">
     <value>Малайзийский ринггит</value>
   </data>
@@ -498,8 +519,14 @@
   <data name="SRD" xml:space="preserve">
     <value>Суринамский доллар</value>
   </data>
+  <data name="SSP" xml:space="preserve">
+    <value>Южносуданский фунт</value>
+  </data>
   <data name="STD" xml:space="preserve">
     <value>Добра</value>
+  </data>
+  <data name="SVC" xml:space="preserve">
+    <value>Сальвадорский колон</value>
   </data>
   <data name="SYP" xml:space="preserve">
     <value>Сирийский фунт</value>
@@ -542,6 +569,9 @@
   </data>
   <data name="USD" xml:space="preserve">
     <value>Доллар США</value>
+  </data>
+  <data name="USN" xml:space="preserve">
+    <value>US Dollar (Next day)</value>
   </data>
   <data name="UYI" xml:space="preserve">
     <value>Уругвайское песо в индексированных единицах</value>
@@ -606,6 +636,9 @@
   <data name="XPT" xml:space="preserve">
     <value>Тройская унция платины</value>
   </data>
+  <data name="XSU" xml:space="preserve">
+    <value>Сукре</value>
+  </data>
   <data name="XTS" xml:space="preserve">
     <value>Код для тестовых целей</value>
   </data>
@@ -619,6 +652,9 @@
     <value>Рэнд</value>
   </data>
   <data name="ZMK" xml:space="preserve">
+    <value>Замбийская квача</value>
+  </data>
+  <data name="ZMW" xml:space="preserve">
     <value>Замбийская квача</value>
   </data>
   <data name="ZWL" xml:space="preserve">

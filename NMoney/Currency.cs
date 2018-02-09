@@ -31,6 +31,11 @@ namespace NMoney
 			return Equals(obj as ICurrency);
 		}
 
+		public virtual string ToString(string format, IFormatProvider formatProvider)
+		{
+			return ToString();
+		}
+
 		public string CharCode { get; private set; }
 
 		public string Symbol { get; private set; }

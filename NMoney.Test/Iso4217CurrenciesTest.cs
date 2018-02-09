@@ -2,6 +2,7 @@ using System;
 using NUnit.Framework;
 using System.Threading;
 using System.Globalization;
+using System.Collections;
 
 namespace NMoney
 {
@@ -85,6 +86,23 @@ namespace NMoney
 			Thread.CurrentThread.CurrentCulture = ci;
 			Thread.CurrentThread.CurrentUICulture = ci;
 			Assert.AreEqual(exp, _set.Parse(code).ToString());
+		}
+
+		[Test, TestCaseSource("fullLocalizationCases")]
+		public void CheckFullLocalization(string code, string culture)
+		{
+			var currency = _set.Parse(code);
+			var invariantName = currency.ToString("n", CultureInfo.InvariantCulture);
+			var localizedName = currency.ToString("n", CultureInfo.GetCultureInfo(culture));
+			if (string.Equals(invariantName, localizedName, StringComparison.OrdinalIgnoreCase))
+				Assert.Inconclusive();
+		}
+
+		static IEnumerable fullLocalizationCases()
+		{
+			foreach(var culture in new[] { "ru"/*, "de", "fr"*/})
+				foreach (var c in _set.AllCurencies)
+					yield return new TestCaseData(c.CharCode, culture);
 		}
 	}
 }

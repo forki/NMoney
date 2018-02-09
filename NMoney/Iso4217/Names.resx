@@ -519,6 +519,9 @@
   <data name="SRD" xml:space="preserve">
     <value>Surinam Dollar</value>
   </data>
+  <data name="SSP" xml:space="preserve">
+    <value>South Sudanese pound</value>
+  </data>
   <data name="STD" xml:space="preserve">
     <value>Dobra</value>
   </data>
@@ -569,9 +572,6 @@
   </data>
   <data name="USN" xml:space="preserve">
     <value>US Dollar (Next day)</value>
-  </data>
-  <data name="USS" xml:space="preserve">
-    <value>US Dollar (Same day)</value>
   </data>
   <data name="UYI" xml:space="preserve">
     <value>Uruguay Peso en Unidades Indexadas (URUIURUI)</value>
@@ -651,7 +651,7 @@
   <data name="ZAR" xml:space="preserve">
     <value>South African Rand</value>
   </data>
-  <data name="ZMK" xml:space="preserve">
+  <data name="ZMW" xml:space="preserve">
     <value>Zambian Kwacha</value>
   </data>
   <data name="ZWL" xml:space="preserve">
