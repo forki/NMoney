@@ -910,7 +910,7 @@ namespace NMoney.Iso4217
 
 	internal class AFNCache
 	{
-		internal static readonly Currency Instance = new Currency("AFN", "\u060b", 971, 0.01m);
+		internal static readonly Currency Instance = new Currency("AFN", "؋", 971, 0.01m);
 	}
 
 	internal class ALLCache
@@ -925,7 +925,7 @@ namespace NMoney.Iso4217
 
 	internal class ANGCache
 	{
-		internal static readonly Currency Instance = new Currency("ANG", "\u0192", 532, 0.01m);
+		internal static readonly Currency Instance = new Currency("ANG", "ƒ", 532, 0.01m);
 	}
 
 	internal class AOACache
@@ -945,12 +945,12 @@ namespace NMoney.Iso4217
 
 	internal class AWGCache
 	{
-		internal static readonly Currency Instance = new Currency("AWG", "\u0192", 533, 0.01m);
+		internal static readonly Currency Instance = new Currency("AWG", "ƒ", 533, 0.01m);
 	}
 
 	internal class AZNCache
 	{
-		internal static readonly Currency Instance = new Currency("AZN", "\u043c\u0430\u043d", 944, 0.01m);
+		internal static readonly Currency Instance = new Currency("AZN", "₼", 944, 0.01m);
 	}
 
 	internal class BAMCache
@@ -970,7 +970,7 @@ namespace NMoney.Iso4217
 
 	internal class BGNCache
 	{
-		internal static readonly Currency Instance = new Currency("BGN", "\u043b\u0432", 975, 0.01m);
+		internal static readonly Currency Instance = new Currency("BGN", "лв", 975, 0.01m);
 	}
 
 	internal class BHDCache
@@ -1025,7 +1025,7 @@ namespace NMoney.Iso4217
 
 	internal class BYNCache
 	{
-		internal static readonly Currency Instance = new Currency("BYN", "p.", 933, 0.01m);
+		internal static readonly Currency Instance = new Currency("BYN", "Br", 933, 0.01m);
 	}
 
 	internal class BZDCache
@@ -1085,7 +1085,7 @@ namespace NMoney.Iso4217
 
 	internal class CRCCache
 	{
-		internal static readonly Currency Instance = new Currency("CRC", "\u20a1", 188, 0.01m);
+		internal static readonly Currency Instance = new Currency("CRC", "₡", 188, 0.01m);
 	}
 
 	internal class CUCCache
@@ -1095,7 +1095,7 @@ namespace NMoney.Iso4217
 
 	internal class CUPCache
 	{
-		internal static readonly Currency Instance = new Currency("CUP", "\u20b1", 192, 0.01m);
+		internal static readonly Currency Instance = new Currency("CUP", "₱", 192, 0.01m);
 	}
 
 	internal class CVECache
@@ -1105,7 +1105,7 @@ namespace NMoney.Iso4217
 
 	internal class CZKCache
 	{
-		internal static readonly Currency Instance = new Currency("CZK", "K\u010d", 203, 0.01m);
+		internal static readonly Currency Instance = new Currency("CZK", "Kč", 203, 0.01m);
 	}
 
 	internal class DJFCache
@@ -1145,7 +1145,7 @@ namespace NMoney.Iso4217
 
 	internal class EURCache
 	{
-		internal static readonly Currency Instance = new Currency("EUR", "\u20ac", 978, 0.01m);
+		internal static readonly Currency Instance = new Currency("EUR", "€", 978, 0.01m);
 	}
 
 	internal class FJDCache
@@ -1170,7 +1170,7 @@ namespace NMoney.Iso4217
 
 	internal class GHSCache
 	{
-		internal static readonly Currency Instance = new Currency("GHS", "¤", 936, 0.01m);
+		internal static readonly Currency Instance = new Currency("GHS", "¢", 936, 0.01m);
 	}
 
 	internal class GIPCache
@@ -1200,7 +1200,7 @@ namespace NMoney.Iso4217
 
 	internal class HKDCache
 	{
-		internal static readonly Currency Instance = new Currency("HKD", "HK$", 344, 0.01m);
+		internal static readonly Currency Instance = new Currency("HKD", "$", 344, 0.01m);
 	}
 
 	internal class HNLCache
@@ -1230,12 +1230,12 @@ namespace NMoney.Iso4217
 
 	internal class ILSCache
 	{
-		internal static readonly Currency Instance = new Currency("ILS", "\u20aa", 376, 0.01m);
+		internal static readonly Currency Instance = new Currency("ILS", "₪", 376, 0.01m);
 	}
 
 	internal class INRCache
 	{
-		internal static readonly Currency Instance = new Currency("INR", "\u20a8", 356, 0.01m);
+		internal static readonly Currency Instance = new Currency("INR", "₹", 356, 0.01m);
 	}
 
 	internal class IQDCache
@@ -1245,7 +1245,7 @@ namespace NMoney.Iso4217
 
 	internal class IRRCache
 	{
-		internal static readonly Currency Instance = new Currency("IRR", "\ufdfc", 364, 0.01m);
+		internal static readonly Currency Instance = new Currency("IRR", "﷼", 364, 0.01m);
 	}
 
 	internal class ISKCache
@@ -1275,12 +1275,12 @@ namespace NMoney.Iso4217
 
 	internal class KGSCache
 	{
-		internal static readonly Currency Instance = new Currency("KGS", "\u043b\u0432", 417, 0.01m);
+		internal static readonly Currency Instance = new Currency("KGS", "лв", 417, 0.01m);
 	}
 
 	internal class KHRCache
 	{
-		internal static readonly Currency Instance = new Currency("KHR", "\u17db", 116, 0.01m);
+		internal static readonly Currency Instance = new Currency("KHR", "៛", 116, 0.01m);
 	}
 
 	internal class KMFCache
@@ -1290,12 +1290,12 @@ namespace NMoney.Iso4217
 
 	internal class KPWCache
 	{
-		internal static readonly Currency Instance = new Currency("KPW", "\u20a9", 408, 0.01m);
+		internal static readonly Currency Instance = new Currency("KPW", "₩", 408, 0.01m);
 	}
 
 	internal class KRWCache
 	{
-		internal static readonly Currency Instance = new Currency("KRW", "¤", 410, 1m);
+		internal static readonly Currency Instance = new Currency("KRW", "₩", 410, 1m);
 	}
 
 	internal class KWDCache
@@ -1310,12 +1310,12 @@ namespace NMoney.Iso4217
 
 	internal class KZTCache
 	{
-		internal static readonly Currency Instance = new Currency("KZT", "\u043b\u0432", 398, 0.01m);
+		internal static readonly Currency Instance = new Currency("KZT", "лв", 398, 0.01m);
 	}
 
 	internal class LAKCache
 	{
-		internal static readonly Currency Instance = new Currency("LAK", "\u20ad", 418, 0.01m);
+		internal static readonly Currency Instance = new Currency("LAK", "₭", 418, 0.01m);
 	}
 
 	internal class LBPCache
@@ -1325,7 +1325,7 @@ namespace NMoney.Iso4217
 
 	internal class LKRCache
 	{
-		internal static readonly Currency Instance = new Currency("LKR", "\u20a8", 144, 0.01m);
+		internal static readonly Currency Instance = new Currency("LKR", "₨", 144, 0.01m);
 	}
 
 	internal class LRDCache
@@ -1360,7 +1360,7 @@ namespace NMoney.Iso4217
 
 	internal class MKDCache
 	{
-		internal static readonly Currency Instance = new Currency("MKD", "\u0434\u0435\u043d", 807, 0.01m);
+		internal static readonly Currency Instance = new Currency("MKD", "ден", 807, 0.01m);
 	}
 
 	internal class MMKCache
@@ -1370,7 +1370,7 @@ namespace NMoney.Iso4217
 
 	internal class MNTCache
 	{
-		internal static readonly Currency Instance = new Currency("MNT", "\u20ae", 496, 0.01m);
+		internal static readonly Currency Instance = new Currency("MNT", "₮", 496, 0.01m);
 	}
 
 	internal class MOPCache
@@ -1385,7 +1385,7 @@ namespace NMoney.Iso4217
 
 	internal class MURCache
 	{
-		internal static readonly Currency Instance = new Currency("MUR", "\u20a8", 480, 0.01m);
+		internal static readonly Currency Instance = new Currency("MUR", "₨", 480, 0.01m);
 	}
 
 	internal class MVRCache
@@ -1425,7 +1425,7 @@ namespace NMoney.Iso4217
 
 	internal class NGNCache
 	{
-		internal static readonly Currency Instance = new Currency("NGN", "\u20a6", 566, 0.01m);
+		internal static readonly Currency Instance = new Currency("NGN", "₦", 566, 0.01m);
 	}
 
 	internal class NIOCache
@@ -1440,7 +1440,7 @@ namespace NMoney.Iso4217
 
 	internal class NPRCache
 	{
-		internal static readonly Currency Instance = new Currency("NPR", "\u20a8", 524, 0.01m);
+		internal static readonly Currency Instance = new Currency("NPR", "₨", 524, 0.01m);
 	}
 
 	internal class NZDCache
@@ -1450,7 +1450,7 @@ namespace NMoney.Iso4217
 
 	internal class OMRCache
 	{
-		internal static readonly Currency Instance = new Currency("OMR", "\ufdfc", 512, 0.001m);
+		internal static readonly Currency Instance = new Currency("OMR", "﷼", 512, 0.001m);
 	}
 
 	internal class PABCache
@@ -1470,17 +1470,17 @@ namespace NMoney.Iso4217
 
 	internal class PHPCache
 	{
-		internal static readonly Currency Instance = new Currency("PHP", "Php", 608, 0.01m);
+		internal static readonly Currency Instance = new Currency("PHP", "₱", 608, 0.01m);
 	}
 
 	internal class PKRCache
 	{
-		internal static readonly Currency Instance = new Currency("PKR", "\u20a8", 586, 0.01m);
+		internal static readonly Currency Instance = new Currency("PKR", "₨", 586, 0.01m);
 	}
 
 	internal class PLNCache
 	{
-		internal static readonly Currency Instance = new Currency("PLN", "z\u0142", 985, 0.01m);
+		internal static readonly Currency Instance = new Currency("PLN", "zł", 985, 0.01m);
 	}
 
 	internal class PYGCache
@@ -1490,7 +1490,7 @@ namespace NMoney.Iso4217
 
 	internal class QARCache
 	{
-		internal static readonly Currency Instance = new Currency("QAR", "\ufdfc", 634, 0.01m);
+		internal static readonly Currency Instance = new Currency("QAR", "﷼", 634, 0.01m);
 	}
 
 	internal class RONCache
@@ -1500,12 +1500,12 @@ namespace NMoney.Iso4217
 
 	internal class RSDCache
 	{
-		internal static readonly Currency Instance = new Currency("RSD", "\u0414\u0438\u043d.", 941, 0.01m);
+		internal static readonly Currency Instance = new Currency("RSD", "Дин.", 941, 0.01m);
 	}
 
 	internal class RUBCache
 	{
-		internal static readonly Currency Instance = new Currency("RUB", "\u0440\u0443\u0431", 643, 0.01m);
+		internal static readonly Currency Instance = new Currency("RUB", "₽", 643, 0.01m);
 	}
 
 	internal class RWFCache
@@ -1515,7 +1515,7 @@ namespace NMoney.Iso4217
 
 	internal class SARCache
 	{
-		internal static readonly Currency Instance = new Currency("SAR", "\ufdfc", 682, 0.01m);
+		internal static readonly Currency Instance = new Currency("SAR", "﷼", 682, 0.01m);
 	}
 
 	internal class SBDCache
@@ -1525,7 +1525,7 @@ namespace NMoney.Iso4217
 
 	internal class SCRCache
 	{
-		internal static readonly Currency Instance = new Currency("SCR", "\u20a8", 690, 0.01m);
+		internal static readonly Currency Instance = new Currency("SCR", "₨", 690, 0.01m);
 	}
 
 	internal class SDGCache
@@ -1590,7 +1590,7 @@ namespace NMoney.Iso4217
 
 	internal class THBCache
 	{
-		internal static readonly Currency Instance = new Currency("THB", "\u0e3f", 764, 0.01m);
+		internal static readonly Currency Instance = new Currency("THB", "฿", 764, 0.01m);
 	}
 
 	internal class TJSCache
@@ -1615,7 +1615,7 @@ namespace NMoney.Iso4217
 
 	internal class TRYCache
 	{
-		internal static readonly Currency Instance = new Currency("TRY", "YTL", 949, 0.01m);
+		internal static readonly Currency Instance = new Currency("TRY", "₺", 949, 0.01m);
 	}
 
 	internal class TTDCache
@@ -1635,7 +1635,7 @@ namespace NMoney.Iso4217
 
 	internal class UAHCache
 	{
-		internal static readonly Currency Instance = new Currency("UAH", "\u20b4", 980, 0.01m);
+		internal static readonly Currency Instance = new Currency("UAH", "₴", 980, 0.01m);
 	}
 
 	internal class UGXCache
@@ -1665,7 +1665,7 @@ namespace NMoney.Iso4217
 
 	internal class UZSCache
 	{
-		internal static readonly Currency Instance = new Currency("UZS", "\u043b\u0432", 860, 0.01m);
+		internal static readonly Currency Instance = new Currency("UZS", "лв", 860, 0.01m);
 	}
 
 	internal class VEFCache
@@ -1675,7 +1675,7 @@ namespace NMoney.Iso4217
 
 	internal class VNDCache
 	{
-		internal static readonly Currency Instance = new Currency("VND", "\u20ab", 704, 1m);
+		internal static readonly Currency Instance = new Currency("VND", "₫", 704, 1m);
 	}
 
 	internal class VUVCache
@@ -1775,7 +1775,7 @@ namespace NMoney.Iso4217
 
 	internal class YERCache
 	{
-		internal static readonly Currency Instance = new Currency("YER", "\ufdfc", 886, 0.01m);
+		internal static readonly Currency Instance = new Currency("YER", "﷼", 886, 0.01m);
 	}
 
 	internal class ZARCache

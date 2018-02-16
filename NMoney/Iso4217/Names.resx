@@ -1,64 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -142,10 +83,10 @@
     <value>Australian Dollar</value>
   </data>
   <data name="AWG" xml:space="preserve">
-    <value>Aruban Guilder</value>
+    <value>Aruban Florin</value>
   </data>
   <data name="AZN" xml:space="preserve">
-    <value>Azerbaijanian Manat</value>
+    <value>Azerbaijan Manat</value>
   </data>
   <data name="BAM" xml:space="preserve">
     <value>Convertible Mark</value>
@@ -190,7 +131,7 @@
     <value>Pula</value>
   </data>
   <data name="BYN" xml:space="preserve">
-    <value>Belarussian Ruble</value>
+    <value>Belarusian Ruble</value>
   </data>
   <data name="BZD" xml:space="preserve">
     <value>Belize Dollar</value>
@@ -211,7 +152,7 @@
     <value>WIR Franc</value>
   </data>
   <data name="CLF" xml:space="preserve">
-    <value>Unidades de fomento</value>
+    <value>Unidad de Fomento</value>
   </data>
   <data name="CLP" xml:space="preserve">
     <value>Chilean Peso</value>
@@ -235,7 +176,7 @@
     <value>Cuban Peso</value>
   </data>
   <data name="CVE" xml:space="preserve">
-    <value>Cape Verde Escudo</value>
+    <value>Cabo Verde Escudo</value>
   </data>
   <data name="CZK" xml:space="preserve">
     <value>Czech Koruna</value>
@@ -277,7 +218,7 @@
     <value>Lari</value>
   </data>
   <data name="GHS" xml:space="preserve">
-    <value>Cedi</value>
+    <value>Ghana Cedi</value>
   </data>
   <data name="GIP" xml:space="preserve">
     <value>Gibraltar Pound</value>
@@ -286,7 +227,7 @@
     <value>Dalasi</value>
   </data>
   <data name="GNF" xml:space="preserve">
-    <value>Guinea Franc</value>
+    <value>Guinean Franc</value>
   </data>
   <data name="GTQ" xml:space="preserve">
     <value>Quetzal</value>
@@ -301,7 +242,7 @@
     <value>Lempira</value>
   </data>
   <data name="HRK" xml:space="preserve">
-    <value>Croatian Kuna</value>
+    <value>Kuna</value>
   </data>
   <data name="HTG" xml:space="preserve">
     <value>Gourde</value>
@@ -346,7 +287,7 @@
     <value>Riel</value>
   </data>
   <data name="KMF" xml:space="preserve">
-    <value>Comoro Franc</value>
+    <value>Comorian Franc </value>
   </data>
   <data name="KPW" xml:space="preserve">
     <value>North Korean Won</value>
@@ -364,7 +305,7 @@
     <value>Tenge</value>
   </data>
   <data name="LAK" xml:space="preserve">
-    <value>Kip</value>
+    <value>Lao Kip</value>
   </data>
   <data name="LBP" xml:space="preserve">
     <value>Lebanese Pound</value>
@@ -377,12 +318,6 @@
   </data>
   <data name="LSL" xml:space="preserve">
     <value>Loti</value>
-  </data>
-  <data name="LTL" xml:space="preserve">
-    <value>Lithuanian Litas</value>
-  </data>
-  <data name="LVL" xml:space="preserve">
-    <value>Latvian Lats</value>
   </data>
   <data name="LYD" xml:space="preserve">
     <value>Libyan Dinar</value>
@@ -418,19 +353,19 @@
     <value>Rufiyaa</value>
   </data>
   <data name="MWK" xml:space="preserve">
-    <value>Kwacha</value>
+    <value>Malawi Kwacha</value>
   </data>
   <data name="MXN" xml:space="preserve">
     <value>Mexican Peso</value>
   </data>
   <data name="MXV" xml:space="preserve">
-    <value>Mexican Unidad de Inversion (UDI)</value>
+    <value>Mexican Unidad de Inversion</value>
   </data>
   <data name="MYR" xml:space="preserve">
     <value>Malaysian Ringgit</value>
   </data>
   <data name="MZN" xml:space="preserve">
-    <value>Metical</value>
+    <value>Mozambique Metical</value>
   </data>
   <data name="NAD" xml:space="preserve">
     <value>Namibia Dollar</value>
@@ -457,7 +392,7 @@
     <value>Balboa</value>
   </data>
   <data name="PEN" xml:space="preserve">
-    <value>Nuevo Sol</value>
+    <value>Sol</value>
   </data>
   <data name="PGK" xml:space="preserve">
     <value>Kina</value>
@@ -478,7 +413,7 @@
     <value>Qatari Rial</value>
   </data>
   <data name="RON" xml:space="preserve">
-    <value>Leu</value>
+    <value>Romanian Leu</value>
   </data>
   <data name="RSD" xml:space="preserve">
     <value>Serbian Dinar</value>
@@ -520,7 +455,7 @@
     <value>Surinam Dollar</value>
   </data>
   <data name="SSP" xml:space="preserve">
-    <value>South Sudanese pound</value>
+    <value>South Sudanese Pound</value>
   </data>
   <data name="STD" xml:space="preserve">
     <value>Dobra</value>
@@ -541,7 +476,7 @@
     <value>Somoni</value>
   </data>
   <data name="TMT" xml:space="preserve">
-    <value>New Manat</value>
+    <value>Turkmenistan New Manat</value>
   </data>
   <data name="TND" xml:space="preserve">
     <value>Tunisian Dinar</value>
@@ -574,7 +509,7 @@
     <value>US Dollar (Next day)</value>
   </data>
   <data name="UYI" xml:space="preserve">
-    <value>Uruguay Peso en Unidades Indexadas (URUIURUI)</value>
+    <value>Uruguay Peso en Unidades Indexadas</value>
   </data>
   <data name="UYU" xml:space="preserve">
     <value>Peso Uruguayo</value>
@@ -583,7 +518,7 @@
     <value>Uzbekistan Sum</value>
   </data>
   <data name="VEF" xml:space="preserve">
-    <value>Bolivar Fuerte</value>
+    <value>Bolívar</value>
   </data>
   <data name="VND" xml:space="preserve">
     <value>Dong</value>
@@ -619,10 +554,7 @@
     <value>East Caribbean Dollar</value>
   </data>
   <data name="XDR" xml:space="preserve">
-    <value>SDR (Special Drawing Right)</value>
-  </data>
-  <data name="XFU" xml:space="preserve">
-    <value>UIC-Franc</value>
+    <value>Special Drawing Right</value>
   </data>
   <data name="XOF" xml:space="preserve">
     <value>CFA Franc BCEAO</value>
@@ -640,7 +572,10 @@
     <value>Sucre</value>
   </data>
   <data name="XTS" xml:space="preserve">
-    <value>Codes for testing purposes</value>
+    <value>Test code</value>
+  </data>
+  <data name="XUA" xml:space="preserve">
+    <value>ADB Unit of Account</value>
   </data>
   <data name="XXX" xml:space="preserve">
     <value>No currency</value>
@@ -649,7 +584,7 @@
     <value>Yemeni Rial</value>
   </data>
   <data name="ZAR" xml:space="preserve">
-    <value>South African Rand</value>
+    <value>Rand</value>
   </data>
   <data name="ZMW" xml:space="preserve">
     <value>Zambian Kwacha</value>
